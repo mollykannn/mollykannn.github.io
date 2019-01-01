@@ -1,0 +1,124 @@
+#header
+  height: 400px
+  background: url("images/banner.jpg") #000
+  background-position: 0 70%
+  background-size: cover
+  z-index: -1
+  display: flex
+  flex-wrap: wrap
+
+#navbar
+  height: 35%
+  display: flex
+  flex: 0 0 100%
+
+$nav-link
+  float: left
+  color: #fff
+  opacity: 0.6
+  text-decoration: none
+  text-shadow: 0 1px rgba(0, 0, 0, 0.2)
+  transition: opacity 0.2s
+  display: block
+  padding: 20px 10px
+  &:hover
+    opacity: 1
+
+.nav-icon
+  @extend $nav-link
+  font-family: font-icon
+  font-size: font-size
+  width: font-size
+  height: font-size
+  cursor: pointer
+  padding: 20px 10px
+
+#main-nav-toggle
+  display: none
+  &:before
+    content: "\f0c9"
+  @media mq-mobile
+    display: block
+    
+.main-nav-link
+  @extend $nav-link
+  font-weight: 300
+  letter-spacing: 1px
+  @media mq-mobile
+    display: none
+
+#nav-rss-link
+  &:before
+    content: "\f09e"
+
+#nav-search-btn
+  &:before
+    content: "\f002"
+
+#search-form-wrap
+  position: absolute
+  width: 200px
+  height: 30px
+  top: 45px
+  right: 10px
+  opacity: 0
+  transition: 0.2s 
+  &.on
+    opacity: 1
+
+.search-form
+  position: absolute
+  top: 0
+  left: 0
+  right: 0
+  background: #fff
+  padding: 5px 10px
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3)
+
+.search-form-input
+  border: none
+  background: none
+  color: color-default
+  width: 100%
+  font: 13px font-sans
+  outline: none
+  &::-webkit-search-results-decoration
+  &::-webkit-search-cancel-button
+    -webkit-appearance: none
+
+.search-form-submit
+  position: absolute
+  top: 50%
+  right: 10px
+  margin-top: -7px
+  font: 13px font-icon
+  border: none
+  background: none
+  color: #bbb
+  cursor: pointer
+  &:hover, &:focus
+    color: #777
+
+#main-nav
+  flex: 1
+
+#sub-nav
+  position:relative
+
+#header-title
+  height: 65%
+  display: flex
+  flex: 0 0 100%
+  text-align: center
+
+#logo-wrap
+  flex: 0 0 100%
+
+#logo
+  text-decoration: none
+  color: #fff
+  font-weight: 300
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3)
+  font-size: 3.5rem
+  line-height: 3.5rem
+  letter-spacing: 2px

@@ -1,0 +1,74 @@
+.archives-wrap
+  margin: 25px 15px
+
+.archive-year-wrap
+  margin-bottom: 1em
+
+.archive-year
+  font-size: 1.2em
+  color: color-grey
+  line-height: 1em
+  text-decoration: none
+  font-weight: bold
+  &:hover
+    color: color-default
+
+.archives
+  width: 100%
+  display: flex
+  flex-wrap: wrap
+  border-bottom: 1px solid #ddd
+
+.archive-article
+  flex: 0 0 50%
+
+.archive-article-inner
+  padding: 10px
+  margin-bottom: 15px
+
+.archive-article-title
+  text-decoration: none
+  font-weight: bold
+  color: color-default
+  transition: color 0.2s
+  line-height: line-height
+  &:hover
+    color: color-link
+
+.archive-article-date
+  color: color-grey
+  text-decoration: none
+  font-size: 0.85em
+  line-height: 1em
+  margin-bottom: 0.5em
+  display: block
+
+#page-nav
+  clearfix()
+  margin: 50px auto
+  background: #fff
+  text-align: center
+  color: color-grey
+  overflow: hidden
+  a, span
+    padding: 10px 20px
+    line-height: 1
+    height: 2ex
+  a
+    color: color-grey
+    text-decoration: none
+    &:hover
+      color: color-default
+  .prev
+    float: left
+  .next
+    float: right
+  .page-number
+    display: inline-block
+    @media mq-mobile
+      display: none
+  .current
+    color: color-default
+    font-weight: bold
+  .space
+    color: color-border
