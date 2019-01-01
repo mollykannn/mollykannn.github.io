@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-62644130-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <title>Gulp學習筆記 | 風の迷路。</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Gulp是一個自動化構建工具。可以安裝不同的Plugin，例如:Live reload, Minify js, css等等….以方便工作。 最近因為想學習一下Webpack，所以先找回evernote的gulp筆記整理一下….(汗)">
+<meta name="keywords" content="Gulp">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Gulp學習筆記">
+<meta property="og:url" content="https://mollykannn.github.io/2017/06/14/start-to-use-gulp/index.html">
+<meta property="og:site_name" content="風の迷路。">
+<meta property="og:description" content="Gulp是一個自動化構建工具。可以安裝不同的Plugin，例如:Live reload, Minify js, css等等….以方便工作。 最近因為想學習一下Webpack，所以先找回evernote的gulp筆記整理一下….(汗)">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://mollykannn.github.io/images/post/2017-06-14-start-to-use-gulp.png">
+<meta property="og:updated_time" content="2019-01-01T04:31:34.962Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Gulp學習筆記">
+<meta name="twitter:description" content="Gulp是一個自動化構建工具。可以安裝不同的Plugin，例如:Live reload, Minify js, css等等….以方便工作。 最近因為想學習一下Webpack，所以先找回evernote的gulp筆記整理一下….(汗)">
+<meta name="twitter:image" content="https://mollykannn.github.io/images/post/2017-06-14-start-to-use-gulp.png">
+<meta name="twitter:creator" content="@https:&#x2F;&#x2F;twitter.com&#x2F;mollyKannn">
+<meta property="fb:app_id" content="1587998741464898">
+  
+    <link rel="alternate" href="/atom.xml" title="風の迷路。" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+    <div id="wrap">
+      <header id="header">
+  <div class="container">
+    <div id="navbar">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories_tags">Categories &amp; Tags</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://mollykannn.github.io"></form>
+        </div>
+      </nav>
+    </div>
+    <div id="header-title">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">風の迷路。</a>
+      </h1>
+      
+    </div>
+  </div>
+</header>
+      <div class="container flex">
+        <section id="main"><article id="post-start-to-use-gulp" class="article article-type-post" itemscope="" itemprop="blogPost">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      Gulp學習筆記
+    </h1>
+  
+
+      </header>
+      <div class="article-meta">
+        <a href="/2017/06/14/start-to-use-gulp/" class="article-date">
+  <time datetime="2017-06-13T16:00:00.000Z" itemprop="datePublished">2017-06-14</time>
+</a>
+        
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/Front-End/">Front-End</a>
+  </div>
+
+      </div>
+    
+    
+    
+        <img src="/images/post/2017-06-14-start-to-use-gulp.png" itemprop="image" style="max-width:100%">
+    
+
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Gulp是一個自動化構建工具。可以安裝不同的Plugin，例如:Live reload, Minify js, css等等….以方便工作。</p>
+<p>最近因為想學習一下Webpack，所以先找回evernote的gulp筆記整理一下….(汗)</p>
+<a id="more"></a>
+<p><br></p>
+<h3 id="準備工具"><a href="#準備工具" class="headerlink" title="準備工具"></a>準備工具</h3><p>1 - 下載<a href="https://nodejs.org/en/" target="_blank" rel="noopener">Node.js</a></p>
+<p>(PS: Node.js會連著npm一拼安裝)</p>
+<h3 id="檢查版本"><a href="#檢查版本" class="headerlink" title="檢查版本"></a>檢查版本</h3><p>2 - 下載後開啟Node.js，然後檢查一下Node.js和npm的版本</p>
+<pre><code>node -v
+npm -v
+</code></pre><h3 id="安裝Gulp"><a href="#安裝Gulp" class="headerlink" title="安裝Gulp"></a>安裝Gulp</h3><p>3 - 安裝Gulp到全域的環境</p>
+<pre><code>npm install gulp -g
+</code></pre><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><p>4 - 開一個新的資料夾，然後進入該資料夾，初始化該資料夾</p>
+<pre><code>npm init
+</code></pre><p><img src="/images/post/2017-06-14-start-to-use-gulp-1.png"></p>
+<p>之後會建立一個package.json的檔案，然後就可以安裝各類型的plugin了。package.json大概是這樣子:</p>
+<p><img src="/images/post/2017-06-14-start-to-use-gulp-2.png"></p>
+<h3 id="安裝plugin"><a href="#安裝plugin" class="headerlink" title="安裝plugin"></a>安裝plugin</h3><p>5 - 只要打上npm install (xxxxxx) –save-dev就可以成功安裝, 例如:</p>
+<pre><code>npm install gulp --save-dev
+</code></pre><p>因為之前只是將Gulp安裝到全域的環境，所以我們還要在資料夾裡安裝一次。這時應該會自動建立一個node_modules的資料夾。  </p>
+<h3 id="常用Plugin"><a href="#常用Plugin" class="headerlink" title="常用Plugin"></a>常用Plugin</h3><p>以下是我常用的Plugin:</p>
+<ul>
+<li>browser-sync - Live Reload的效果，可以自動同步檔案</li>
+<li>gulp - Gulp安裝</li>
+<li>gulp-clean-css - Minify CSS</li>
+<li>gulp-file-include - 類似PHP include的效果, 主要用在header和footer裡</li>
+<li>gulp-rename - 重新命名檔案 (將minify後的檔案加上.min)</li>
+<li>gulp-sass - 用來使用SASS, SCSS</li>
+<li>gulp-uglify - Minify JS</li>
+</ul>
+<h3 id="資料夾架構"><a href="#資料夾架構" class="headerlink" title="資料夾架構"></a>資料夾架構</h3><p>首先先說明自己的資料夾架構:</p>
+<p><img src="/images/post/2017-06-14-start-to-use-gulp-3.png"></p>
+<ul>
+<li>app - 裝著還沒minify的CSS file</li>
+<li>build - 所有改動也是在這個資料夾裡做，包括了html, scss, js的檔案</li>
+<li>js - Minify後的js</li>
+<li>stylesheets - Minify後的css</li>
+</ul>
+<h3 id="設定Gulp"><a href="#設定Gulp" class="headerlink" title="設定Gulp"></a>設定Gulp</h3><p>6 - 我們需要建立一個gulpfile.js的檔案來做設定, 以下是我的gulpfile.js的設定</p>
+<pre><code>var gulp        = require(&apos;gulp&apos;),
+    cleanCSS    = require(&apos;gulp-clean-css&apos;),
+    rename      = require(&quot;gulp-rename&quot;),
+    uglify      = require(&apos;gulp-uglify&apos;),
+    sass        = require(&apos;gulp-sass&apos;),
+    fileinclude = require(&apos;gulp-file-include&apos;),
+    gutil       = require(&apos;gulp-util&apos;),
+    browserSync = require(&apos;browser-sync&apos;).create();
+
+
+// Minimum js file
+gulp.task(&apos;uglify&apos;, function() {
+  gulp.src(&apos;build/js/*.js&apos;)
+  .pipe(uglify())
+  .on(&apos;error&apos;, function (err) { gutil.log(gutil.colors.red(&apos;[Error]&apos;), err.toString()); })
+  .pipe(rename(function(path) {
+    path.basename += &quot;.min&quot;;
+    path.extname = &quot;.js&quot;;
+  }))
+  .pipe(gulp.dest(&apos;js/&apos;))
+  .pipe(browserSync.stream());
+});
+
+// Write SASS file
+gulp.task(&apos;sass&apos;, function(){
+  gulp.src(&apos;build/sass/*.scss&apos;)
+  .pipe(sass())
+  .pipe(gulp.dest(&quot;app/css&quot;))
+  .pipe(cleanCSS())
+  .pipe(rename(function(path) {
+    path.basename += &quot;.min&quot;;
+    path.extname = &quot;.css&quot;;
+  }))
+  .pipe(gulp.dest(&apos;stylesheets/&apos;))
+  .pipe(browserSync.stream());
+});
+
+// Include HTML file
+gulp.task(&apos;fileinclude&apos;, function() {
+  gulp.src([&apos;build/*.html&apos;])
+  .pipe(fileinclude({
+    prefix: &apos;@@&apos;,
+    basepath: &apos;@file&apos;
+  }))
+  .pipe(gulp.dest(&apos;./&apos;))
+  .pipe(browserSync.stream());
+});
+
+// Gulp Watch
+gulp.task(&apos;watch&apos;, [&apos;sass&apos;,&apos;fileinclude&apos;,&apos;uglify&apos;], function() {
+  browserSync.init({
+    server: {
+        baseDir: &quot;./&quot;,
+    },
+    reloadDelay: 100
+  });
+  gulp.watch(&apos;build/*.html&apos;, [&apos;fileinclude&apos;]);
+  gulp.watch(&apos;build/sass/*.scss&apos;,[&apos;sass&apos;]);
+  gulp.watch(&apos;build/js/*.js&apos;,[&apos;uglify&apos;]);
+  // Other watchers
+});
+
+// Gulp
+gulp.task(&apos;default&apos;, [&apos;watch&apos;]);
+</code></pre><h3 id="運行Gulp"><a href="#運行Gulp" class="headerlink" title="運行Gulp"></a>運行Gulp</h3><p>7 - 因為我在gulpfile.js裡設定了</p>
+<pre><code>gulp
+</code></pre><h3 id="循環使用Gulp"><a href="#循環使用Gulp" class="headerlink" title="循環使用Gulp"></a>循環使用Gulp</h3><p>如果將來想在另外的資料夾使用gulp，可以將package.json和gulpfile.js直接複製去資料夾裡，然後打上:</p>
+<pre><code>npm install
+</code></pre><p>那就會直接裝上package.json的plugin了，然後就可以打上gulp運行了。</p>
+<hr>
+<p>參考網址:<br><a href="http://www.oxxostudio.tw/articles/201503/gulp-install-webserver.html" target="_blank" rel="noopener">Gulp 學習 1 - 安裝與執行 - OXXO.STUDIO</a><br><a href="https://kejyuntw.gitbooks.io/gulp-learning-notes/content/index.html" target="_blank" rel="noopener">介紹 · gulp 學習筆記</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mollykannn.github.io/2017/06/14/start-to-use-gulp/" data-id="cjqdm626j001k6pssoofm992d" class="article-share-link">Share</a>
+      
+        <a href="https://mollykannn.github.io/2017/06/14/start-to-use-gulp/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Gulp/">Gulp</a></li></ul>
+
+    </footer>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/06/20/atom-hot-key/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Atom Hot Key 筆記
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/05/20/security-ransomware-guideline/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">預防Ransomware (勒索病毒) 基本措施</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+        
+          <aside id="sidebar">
+  
+      <div class="widget-wrap">
+    <div class="widget">
+      <img src="/css/images/icon.jpg" alt="Mollys-icon" class="icon_image">
+      毛利，香港人眼中嘅廢青。PHP/Java Programmer。防止自己失憶﹐記錄各樣IT問題。
+      <div class="icon-nav">
+        <a href="https://mollykannn.github.io/portfolio/" class="portfolio"></a>
+        <a href="https://github.com/mollykannn" class="github"></a>
+        <a href="https://www.linkedin.com/in/mollykan/" class="linkedin"></a>
+        <a href="https://twitter.com/MollyKannn" class="twitter"></a>
+      </div>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/12/16/social-media-share-like-button/">Share/Like Button集合</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/17/shadowsocks/">MACOS - Shadowsocks使用方法</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/16/start-to-use-yii2-1/">Yii2學習筆記 (1)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/29/atom-plugin/">Atom Plugin</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/16/mac-os-setting/">MacOS Sierra 基本設定</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Back-End/">Back-End</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Editor/">Editor</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Front-End/">Front-End</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/MACOS/">MACOS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/SEO/">SEO</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Ubuntu/">Ubuntu</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Atom/" style="font-size: 15px;">Atom</a> <a href="/tags/Basic-Setting/" style="font-size: 10px;">Basic Setting</a> <a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/Chocolatey/" style="font-size: 10px;">Chocolatey</a> <a href="/tags/Feedly/" style="font-size: 10px;">Feedly</a> <a href="/tags/Font/" style="font-size: 10px;">Font</a> <a href="/tags/Git/" style="font-size: 20px;">Git</a> <a href="/tags/Google-Analytics/" style="font-size: 10px;">Google-Analytics</a> <a href="/tags/Gulp/" style="font-size: 10px;">Gulp</a> <a href="/tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="/tags/Jekyll/" style="font-size: 10px;">Jekyll</a> <a href="/tags/Life/" style="font-size: 10px;">Life</a> <a href="/tags/Like-Button/" style="font-size: 10px;">Like Button</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/RSS/" style="font-size: 10px;">RSS</a> <a href="/tags/Ransomware/" style="font-size: 10px;">Ransomware</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Share-Button/" style="font-size: 10px;">Share Button</a> <a href="/tags/Software/" style="font-size: 10px;">Software</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Webpack/" style="font-size: 10px;">Webpack</a> <a href="/tags/Yii/" style="font-size: 10px;">Yii</a> <a href="/tags/devtools/" style="font-size: 15px;">devtools</a>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="container">
+    <div id="footer-info" class="inner">
+      &copy; 2019 powered by <a href="http://hexo.io/" target="_blank">Hexo</a><br>
+      Theme: <a href="https://github.com/hexojs/hexo-theme-landscape">landscape</a>, edited by <a href="https://github.com/mollykannn" target="_blank">Molly Kan</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories_tags" class="mobile-nav-link">Categories &amp; Tags</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mollykannn';
+  
+  var disqus_url = 'https://mollykannn.github.io/2017/06/14/start-to-use-gulp/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>

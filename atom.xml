@@ -1,0 +1,456 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>風の迷路。</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://mollykannn.github.io/"/>
+  <updated>2019-01-01T09:46:00.967Z</updated>
+  <id>https://mollykannn.github.io/</id>
+  
+  <author>
+    <name>Molly Kan</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Share/Like Button集合</title>
+    <link href="https://mollykannn.github.io/2018/12/16/social-media-share-like-button/"/>
+    <id>https://mollykannn.github.io/2018/12/16/social-media-share-like-button/</id>
+    <published>2018-12-15T16:00:00.000Z</published>
+    <updated>2019-01-01T09:46:00.967Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;社交網站上的Share/Like Button集合。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Front-End" scheme="https://mollykannn.github.io/categories/Front-End/"/>
+    
+    
+      <category term="Share Button" scheme="https://mollykannn.github.io/tags/Share-Button/"/>
+    
+      <category term="Like Button" scheme="https://mollykannn.github.io/tags/Like-Button/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MACOS - Shadowsocks使用方法</title>
+    <link href="https://mollykannn.github.io/2018/09/17/shadowsocks/"/>
+    <id>https://mollykannn.github.io/2018/09/17/shadowsocks/</id>
+    <published>2018-09-16T16:00:00.000Z</published>
+    <updated>2019-01-01T04:05:57.137Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;翻牆程式，從Evernote上拿回紀錄。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="MACOS" scheme="https://mollykannn.github.io/categories/MACOS/"/>
+    
+    
+      <category term="Software" scheme="https://mollykannn.github.io/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Yii2學習筆記 (1)</title>
+    <link href="https://mollykannn.github.io/2018/09/16/start-to-use-yii2-1/"/>
+    <id>https://mollykannn.github.io/2018/09/16/start-to-use-yii2-1/</id>
+    <published>2018-09-15T16:00:00.000Z</published>
+    <updated>2019-01-01T04:26:24.664Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;從Evernote上拿回一些筆記….&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Back-End" scheme="https://mollykannn.github.io/categories/Back-End/"/>
+    
+    
+      <category term="Yii" scheme="https://mollykannn.github.io/tags/Yii/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Atom Plugin</title>
+    <link href="https://mollykannn.github.io/2018/04/29/atom-plugin/"/>
+    <id>https://mollykannn.github.io/2018/04/29/atom-plugin/</id>
+    <published>2018-04-28T16:00:00.000Z</published>
+    <updated>2019-01-01T04:28:19.141Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;轉VS code前記錄一下自己在Atom正在使用的Plugin….&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Editor" scheme="https://mollykannn.github.io/categories/Editor/"/>
+    
+    
+      <category term="Atom" scheme="https://mollykannn.github.io/tags/Atom/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MacOS Sierra 基本設定</title>
+    <link href="https://mollykannn.github.io/2017/07/16/mac-os-setting/"/>
+    <id>https://mollykannn.github.io/2017/07/16/mac-os-setting/</id>
+    <published>2017-07-15T16:00:00.000Z</published>
+    <updated>2019-01-01T04:28:16.275Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;是的，最近轉了新公司，用的是Macbook Pro…雖然自己本來就有一部Macbook Pro，可是都沒有怎樣用來Coding (汗)，於是設定就成為了一大難關 (?)。&lt;/p&gt;
+&lt;p&gt;於是記錄一下一些基本設定吧…&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="MACOS" scheme="https://mollykannn.github.io/categories/MACOS/"/>
+    
+    
+      <category term="Basic Setting" scheme="https://mollykannn.github.io/tags/Basic-Setting/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Webpack學習筆記</title>
+    <link href="https://mollykannn.github.io/2017/06/21/start-to-use-webpack/"/>
+    <id>https://mollykannn.github.io/2017/06/21/start-to-use-webpack/</id>
+    <published>2017-06-20T16:00:00.000Z</published>
+    <updated>2019-01-01T04:28:13.404Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Webpack是一個模組整合工具。可以安裝不同的Plugin，例如:Live reload, Minify js, css等等。&lt;/p&gt;
+&lt;p&gt;看見那麼多人在用Webpack，而且Gulp也有一段時間沒更新了，也想學習一下react。所以就來學習一下Webpack吧。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Front-End" scheme="https://mollykannn.github.io/categories/Front-End/"/>
+    
+    
+      <category term="Webpack" scheme="https://mollykannn.github.io/tags/Webpack/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Atom Hot Key 筆記</title>
+    <link href="https://mollykannn.github.io/2017/06/20/atom-hot-key/"/>
+    <id>https://mollykannn.github.io/2017/06/20/atom-hot-key/</id>
+    <published>2017-06-19T16:00:00.000Z</published>
+    <updated>2019-01-01T04:28:10.140Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;又是一篇在evernote整理後的文章 (汗)。方便一下自己找筆記。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Editor" scheme="https://mollykannn.github.io/categories/Editor/"/>
+    
+    
+      <category term="Atom" scheme="https://mollykannn.github.io/tags/Atom/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Gulp學習筆記</title>
+    <link href="https://mollykannn.github.io/2017/06/14/start-to-use-gulp/"/>
+    <id>https://mollykannn.github.io/2017/06/14/start-to-use-gulp/</id>
+    <published>2017-06-13T16:00:00.000Z</published>
+    <updated>2019-01-01T04:31:34.962Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Gulp是一個自動化構建工具。可以安裝不同的Plugin，例如:Live reload, Minify js, css等等….以方便工作。&lt;/p&gt;
+&lt;p&gt;最近因為想學習一下Webpack，所以先找回evernote的gulp筆記整理一下….(汗)&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Front-End" scheme="https://mollykannn.github.io/categories/Front-End/"/>
+    
+    
+      <category term="Gulp" scheme="https://mollykannn.github.io/tags/Gulp/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>預防Ransomware (勒索病毒) 基本措施</title>
+    <link href="https://mollykannn.github.io/2017/05/20/security-ransomware-guideline/"/>
+    <id>https://mollykannn.github.io/2017/05/20/security-ransomware-guideline/</id>
+    <published>2017-05-19T16:00:00.000Z</published>
+    <updated>2019-01-01T04:32:03.905Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Photo by: &lt;a href=&quot;http://cybersecurity.plus/2016/04/%E9%98%B2locky%E5%86%87%E5%BE%97%E6%87%B6%EF%BC%8C%E4%BA%BA%E4%BA%BA%E9%83%BD%E8%A6%81%E3%80%8C%E7%89%B9%E4%BA%8B%E7%89%B9%E8%BE%A6%E3%80%8D%EF%BC%81%EF%BC%88%E4%B8%8B%EF%BC%89/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Cyber Security.Plus&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;呢篇係大概一年前聽一個講座而寫落嘅筆記，依家拎番出黎執執佢提醒下自己 (汗)。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Others" scheme="https://mollykannn.github.io/categories/Others/"/>
+    
+    
+      <category term="Security" scheme="https://mollykannn.github.io/tags/Security/"/>
+    
+      <category term="Ransomware" scheme="https://mollykannn.github.io/tags/Ransomware/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>RSS訂閱清單</title>
+    <link href="https://mollykannn.github.io/2017/03/19/rss-feeds/"/>
+    <id>https://mollykannn.github.io/2017/03/19/rss-feeds/</id>
+    <published>2017-03-18T16:00:00.000Z</published>
+    <updated>2019-01-01T05:45:55.298Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近收拾了一下Feedly的RSS訂閱，以下的是清單：&lt;/p&gt;
+&lt;p&gt;(不知道之後還會不會在這邊更新…如果想看最新的還是去我的&lt;a href=&quot;https://github.com/mollykannn/rss-feeds-molly&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;github repo&lt;/a&gt;會比較好XD)&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Others" scheme="https://mollykannn.github.io/categories/Others/"/>
+    
+    
+      <category term="Feedly" scheme="https://mollykannn.github.io/tags/Feedly/"/>
+    
+      <category term="RSS" scheme="https://mollykannn.github.io/tags/RSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows - 使用cmd快速安裝軟件</title>
+    <link href="https://mollykannn.github.io/2016/09/12/windows-using-cmd-to-install-software/"/>
+    <id>https://mollykannn.github.io/2016/09/12/windows-using-cmd-to-install-software/</id>
+    <published>2016-09-11T16:00:00.000Z</published>
+    <updated>2019-01-01T04:33:26.914Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;每一次洗機後或是在新電腦安裝軟件是一件很麻煩的事情，要到各官方網站下載安裝檔後然後安裝。使用&lt;a href=&quot;https://chocolatey.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Chocolatey&lt;/a&gt;可以使用windows上的cmd打下command來安裝大部分軟件，而且還可以檢查更新和安裝最新版本，實在太方便了 (哭)。&lt;/p&gt;
+&lt;p&gt;如果有用MAC OS的話&lt;a href=&quot;https://chocolatey.org/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Chocolatey&lt;/a&gt;就像&lt;a href=&quot;https://caskroom.github.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Homebrew cask&lt;/a&gt;一樣。Linux的話就像apt-get一樣。&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Windows" scheme="https://mollykannn.github.io/categories/Windows/"/>
+    
+    
+      <category term="Chocolatey" scheme="https://mollykannn.github.io/tags/Chocolatey/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Font - 各作業系統的預設/內置字型</title>
+    <link href="https://mollykannn.github.io/2016/09/11/operating-system-default-fonts/"/>
+    <id>https://mollykannn.github.io/2016/09/11/operating-system-default-fonts/</id>
+    <published>2016-09-10T16:00:00.000Z</published>
+    <updated>2019-01-01T04:41:06.939Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;iOS-預設字型&quot;&gt;&lt;a href=&quot;#iOS-預設字型&quot; class=&quot;headerlink&quot; title=&quot;iOS 預設字型&quot;&gt;&lt;/a&gt;iOS 預設字型&lt;/h3&gt;&lt;h4 id=&quot;iOS-9-前&quot;&gt;&lt;a href=&quot;#iOS-9-前&quot; class=&quot;headerlink&quot; title=&quot;iOS 9 前&quot;&gt;&lt;/a&gt;iOS 9 前&lt;/h4&gt;&lt;p&gt;繁體: 黑體-繁 (Heiti TC)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;STHeitiTC Light (幼體)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;STHeitiTC Medium (黑體)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;簡體: 黑體-簡 (Heiti SC)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;STHeitiSC Light (幼體)&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;STHeitiSC Medium (黑體)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;英文: Helvetica Neue&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Others" scheme="https://mollykannn.github.io/categories/Others/"/>
+    
+    
+      <category term="Font" scheme="https://mollykannn.github.io/tags/Font/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Jekyll - Windows 10 Setup</title>
+    <link href="https://mollykannn.github.io/2016/08/05/jekyll-windows-setup/"/>
+    <id>https://mollykannn.github.io/2016/08/05/jekyll-windows-setup/</id>
+    <published>2016-08-04T16:00:00.000Z</published>
+    <updated>2019-01-01T04:41:21.811Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Jekyll&quot;&gt;&lt;a href=&quot;#Jekyll&quot; class=&quot;headerlink&quot; title=&quot;Jekyll&quot;&gt;&lt;/a&gt;Jekyll&lt;/h2&gt;&lt;p&gt;&lt;a href=&quot;https://jekyllrb.com/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Jekyll&lt;/a&gt;是使用Ruby開發的靜態網站生產器，可以存放在Github裡，現在這個Blog也是使用Jekyll的。因為每一次洗機後在Windows安裝Jekyll總是會遇到錯誤，還是記錄一下步驟好了。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Blog" scheme="https://mollykannn.github.io/categories/Blog/"/>
+    
+    
+      <category term="Jekyll" scheme="https://mollykannn.github.io/tags/Jekyll/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Google devtools - Udemy課程筆記</title>
+    <link href="https://mollykannn.github.io/2016/08/03/google-devtools-udemy-note/"/>
+    <id>https://mollykannn.github.io/2016/08/03/google-devtools-udemy-note/</id>
+    <published>2016-08-02T16:00:00.000Z</published>
+    <updated>2019-01-01T05:30:37.043Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;最近在facebook裡看到了這個免費的課程 - &lt;a href=&quot;https://www.udemy.com/chrome-devtools/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Chrome 網頁除錯功能大解密&lt;/a&gt;。前幾天很快地看過一次，節錄一下自己還不知道的技巧。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Front-End" scheme="https://mollykannn.github.io/categories/Front-End/"/>
+    
+    
+      <category term="devtools" scheme="https://mollykannn.github.io/tags/devtools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>CSS - 關閉按鈕</title>
+    <link href="https://mollykannn.github.io/2016/06/27/css-close-button/"/>
+    <id>https://mollykannn.github.io/2016/06/27/css-close-button/</id>
+    <published>2016-06-26T16:00:00.000Z</published>
+    <updated>2019-01-01T05:30:55.404Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          
+        
+      
+    
+    </summary>
+    
+      <category term="Front-End" scheme="https://mollykannn.github.io/categories/Front-End/"/>
+    
+    
+      <category term="CSS" scheme="https://mollykannn.github.io/tags/CSS/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>GA - 使用 trackEvent 追蹤點擊數</title>
+    <link href="https://mollykannn.github.io/2016/06/14/ga-trackevent/"/>
+    <id>https://mollykannn.github.io/2016/06/14/ga-trackevent/</id>
+    <published>2016-06-13T16:00:00.000Z</published>
+    <updated>2019-01-01T05:34:26.410Z</updated>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;_trackEvent(category, action, opt_label, opt_value, opt_noninteraction)
+&lt;/code&gt;&lt;/pre&gt;
+    
+    </summary>
+    
+      <category term="SEO" scheme="https://mollykannn.github.io/categories/SEO/"/>
+    
+    
+      <category term="Google-Analytics" scheme="https://mollykannn.github.io/tags/Google-Analytics/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Javascript - 檢查手機正在使用的方向</title>
+    <link href="https://mollykannn.github.io/2016/06/14/javascript-detect-mobile-orientation/"/>
+    <id>https://mollykannn.github.io/2016/06/14/javascript-detect-mobile-orientation/</id>
+    <published>2016-06-13T16:00:00.000Z</published>
+    <updated>2019-01-01T05:31:12.240Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;在做RWD的時候，很多時候也會設定當手機直放或橫放時，會顯示甚麼指定的東西。以下是利用Javascript來檢查手機正在使用的方向的編碼。&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Front-End" scheme="https://mollykannn.github.io/categories/Front-End/"/>
+    
+    
+      <category term="Javascript" scheme="https://mollykannn.github.io/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Ubuntu起手 - 1.安裝及使用速成輸入法</title>
+    <link href="https://mollykannn.github.io/2016/01/17/start-to-use-ubuntu/"/>
+    <id>https://mollykannn.github.io/2016/01/17/start-to-use-ubuntu/</id>
+    <published>2016-01-16T16:00:00.000Z</published>
+    <updated>2019-01-01T05:34:10.668Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;現在最新的版本是15.01，可以到這裡下載:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.ubuntu-tw.org/modules/tinyd0/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Ubuntu 正體中文站&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Ubuntu" scheme="https://mollykannn.github.io/categories/Ubuntu/"/>
+    
+    
+      <category term="Ubuntu" scheme="https://mollykannn.github.io/tags/Ubuntu/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git - 使用SSH對Github進行操作(3)</title>
+    <link href="https://mollykannn.github.io/2014/12/29/git-github-use-method-3/"/>
+    <id>https://mollykannn.github.io/2014/12/29/git-github-use-method-3/</id>
+    <published>2014-12-28T16:00:00.000Z</published>
+    <updated>2019-01-01T05:33:58.859Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;每一次上傳檔案到github時也要輸入帳號及密碼是一件很麻煩的事情, 如果使用SSH的話, 就可以避免了這些煩惱了 (笑)&lt;/p&gt;
+&lt;p&gt;參考: &lt;a href=&quot;http://www.dotblogs.com.tw/kirkchen/archive/2013/04/23/use_ssh_to_interact_with_github_in_windows.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Windows使用ssh對Github進行操作 - 愛流浪的小風- 點部落&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;以下是節錄下來的指令:&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="https://mollykannn.github.io/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="https://mollykannn.github.io/tags/Git/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Git - 使用Dropbox建立Git倉庫(4)</title>
+    <link href="https://mollykannn.github.io/2014/12/29/git-github-use-method-4/"/>
+    <id>https://mollykannn.github.io/2014/12/29/git-github-use-method-4/</id>
+    <published>2014-12-28T16:00:00.000Z</published>
+    <updated>2019-01-01T05:34:04.881Z</updated>
+    
+    <summary type="html">
+    
+      &lt;p&gt;如果想將某些檔案分享給指定的朋友們一起修改而不常公開給所有人看到, 可以使用dropbox (其實其他的雲端儲存網站也可以的)。&lt;/p&gt;
+&lt;p&gt;參考網址: &lt;a href=&quot;http://ibruce.info/2013/12/30/git-with-dropbox/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;使用Dropbox建立Git私有仓库&lt;/a&gt; , 以下是節錄下來的指令:&lt;/p&gt;
+    
+    </summary>
+    
+      <category term="Git" scheme="https://mollykannn.github.io/categories/Git/"/>
+    
+    
+      <category term="Git" scheme="https://mollykannn.github.io/tags/Git/"/>
+    
+  </entry>
+  
+</feed>

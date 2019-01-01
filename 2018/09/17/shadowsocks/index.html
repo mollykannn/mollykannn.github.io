@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+<!-- Google Analytics -->
+<script type="text/javascript">
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-62644130-1', 'auto');
+ga('send', 'pageview');
+
+</script>
+<!-- End Google Analytics -->
+
+
+  
+  <title>MACOS - Shadowsocks使用方法 | 風の迷路。</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="翻牆程式，從Evernote上拿回紀錄。">
+<meta name="keywords" content="Software">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MACOS - Shadowsocks使用方法">
+<meta property="og:url" content="https://mollykannn.github.io/2018/09/17/shadowsocks/index.html">
+<meta property="og:site_name" content="風の迷路。">
+<meta property="og:description" content="翻牆程式，從Evernote上拿回紀錄。">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-01-01T04:05:57.137Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MACOS - Shadowsocks使用方法">
+<meta name="twitter:description" content="翻牆程式，從Evernote上拿回紀錄。">
+<meta name="twitter:creator" content="@https:&#x2F;&#x2F;twitter.com&#x2F;mollyKannn">
+<meta property="fb:app_id" content="1587998741464898">
+  
+    <link rel="alternate" href="/atom.xml" title="風の迷路。" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+    <div id="wrap">
+      <header id="header">
+  <div class="container">
+    <div id="navbar">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+          <a class="main-nav-link" href="/categories_tags">Categories &amp; Tags</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+        <div id="search-form-wrap">
+          <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://mollykannn.github.io"></form>
+        </div>
+      </nav>
+    </div>
+    <div id="header-title">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">風の迷路。</a>
+      </h1>
+      
+    </div>
+  </div>
+</header>
+      <div class="container flex">
+        <section id="main"><article id="post-shadowsocks" class="article article-type-post" itemscope="" itemprop="blogPost">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      MACOS - Shadowsocks使用方法
+    </h1>
+  
+
+      </header>
+      <div class="article-meta">
+        <a href="/2018/09/17/shadowsocks/" class="article-date">
+  <time datetime="2018-09-16T16:00:00.000Z" itemprop="datePublished">2018-09-17</time>
+</a>
+        
+  <div class="article-category">
+    <a class="article-category-link" href="/categories/MACOS/">MACOS</a>
+  </div>
+
+      </div>
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>翻牆程式，從Evernote上拿回紀錄。</p>
+<a id="more"></a>
+<h3 id="安裝-Shadowsocks"><a href="#安裝-Shadowsocks" class="headerlink" title="安裝 Shadowsocks"></a>安裝 <a href="https://shadowsocks.org" target="_blank" rel="noopener">Shadowsocks</a></h3><pre><code>brew install shadowsocks-libev
+</code></pre><p><br></p>
+<h3 id="設定-shadowsocks-libev-json"><a href="#設定-shadowsocks-libev-json" class="headerlink" title="設定 shadowsocks-libev.json"></a>設定 shadowsocks-libev.json</h3><pre><code>{
+&quot;server&quot;:&quot;(server IP)&quot;,
+&quot;server_port&quot;:(server port),
+&quot;local_address&quot;: &quot;(local address)&quot;,
+&quot;local_port&quot;:(local port),
+&quot;password&quot;:&quot;(password)&quot;,
+&quot;timeout&quot;:600,
+&quot;method&quot;:&quot;aes-256-cfb&quot;,
+&quot;fast_open&quot;: false
+}
+</code></pre><p><br></p>
+<h3 id="開啟-Shadowsocks"><a href="#開啟-Shadowsocks" class="headerlink" title="開啟 Shadowsocks"></a>開啟 Shadowsocks</h3><pre><code>ss-local -c /usr/local/etc/shadowsocks-libev.json
+</code></pre><p><br></p>
+<h4 id="設定開機後自動開啟-Shadowsocks"><a href="#設定開機後自動開啟-Shadowsocks" class="headerlink" title="設定開機後自動開啟 Shadowsocks"></a>設定開機後自動開啟 Shadowsocks</h4><pre><code>ln -sfv /usr/local/opt/shadowsocks-libev/*.plist ~/Library/LaunchAgents
+$ launchctl load ~/Library/LaunchAgents/homebrew.mxcl.shadowsocks-libev.plist
+</code></pre><p><br></p>
+<h4 id="關閉自動開啟-Shadowsocks"><a href="#關閉自動開啟-Shadowsocks" class="headerlink" title="關閉自動開啟 Shadowsocks"></a>關閉自動開啟 Shadowsocks</h4><pre><code>launchctl remove homebrew.mxcl.shadowsocks-libev
+</code></pre><p><br></p>
+<h4 id="關閉-Shadowsocks-Kill-port"><a href="#關閉-Shadowsocks-Kill-port" class="headerlink" title="關閉 Shadowsocks (Kill port)"></a>關閉 Shadowsocks (Kill port)</h4><pre><code>lsof -ti:1901 | xargs kill -9
+</code></pre><p><br></p>
+<h4 id="其他設定"><a href="#其他設定" class="headerlink" title="其他設定"></a>其他設定</h4><blockquote>
+<p>Google Chrome =&gt; SwitchyOmega =&gt; 設定Sock5</p>
+</blockquote>
+<hr>
+<p>是咁的﹐其實有GUI版嘅Shadowsocks可以用﹐叫<a href="https://www.sednax.com/download.php" target="_blank" rel="noopener">Shadowsocks X</a>。其實唔洗裝得咁辛苦（逃</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://mollykannn.github.io/2018/09/17/shadowsocks/" data-id="cjqdm626q001x6pss3eol3j3o" class="article-share-link">Share</a>
+      
+        <a href="https://mollykannn.github.io/2018/09/17/shadowsocks/#disqus_thread" class="article-comment-link">Comments</a>
+      
+      
+  <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Software/">Software</a></li></ul>
+
+    </footer>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2018/12/16/social-media-share-like-button/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          Share/Like Button集合
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2018/09/16/start-to-use-yii2-1/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Yii2學習筆記 (1)</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<section id="comments">
+  <div id="disqus_thread">
+    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  </div>
+</section>
+</section>
+        
+          <aside id="sidebar">
+  
+      <div class="widget-wrap">
+    <div class="widget">
+      <img src="/css/images/icon.jpg" alt="Mollys-icon" class="icon_image">
+      毛利，香港人眼中嘅廢青。PHP/Java Programmer。防止自己失憶﹐記錄各樣IT問題。
+      <div class="icon-nav">
+        <a href="https://mollykannn.github.io/portfolio/" class="portfolio"></a>
+        <a href="https://github.com/mollykannn" class="github"></a>
+        <a href="https://www.linkedin.com/in/mollykan/" class="linkedin"></a>
+        <a href="https://twitter.com/MollyKannn" class="twitter"></a>
+      </div>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/12/16/social-media-share-like-button/">Share/Like Button集合</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/17/shadowsocks/">MACOS - Shadowsocks使用方法</a>
+          </li>
+        
+          <li>
+            <a href="/2018/09/16/start-to-use-yii2-1/">Yii2學習筆記 (1)</a>
+          </li>
+        
+          <li>
+            <a href="/2018/04/29/atom-plugin/">Atom Plugin</a>
+          </li>
+        
+          <li>
+            <a href="/2017/07/16/mac-os-setting/">MacOS Sierra 基本設定</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+      <ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/categories/Back-End/">Back-End</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Blog/">Blog</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Editor/">Editor</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Front-End/">Front-End</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Git/">Git</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/MACOS/">MACOS</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Others/">Others</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/SEO/">SEO</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Ubuntu/">Ubuntu</a></li><li class="category-list-item"><a class="category-list-link" href="/categories/Windows/">Windows</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/Atom/" style="font-size: 15px;">Atom</a> <a href="/tags/Basic-Setting/" style="font-size: 10px;">Basic Setting</a> <a href="/tags/CSS/" style="font-size: 15px;">CSS</a> <a href="/tags/Chocolatey/" style="font-size: 10px;">Chocolatey</a> <a href="/tags/Feedly/" style="font-size: 10px;">Feedly</a> <a href="/tags/Font/" style="font-size: 10px;">Font</a> <a href="/tags/Git/" style="font-size: 20px;">Git</a> <a href="/tags/Google-Analytics/" style="font-size: 10px;">Google-Analytics</a> <a href="/tags/Gulp/" style="font-size: 10px;">Gulp</a> <a href="/tags/Javascript/" style="font-size: 10px;">Javascript</a> <a href="/tags/Jekyll/" style="font-size: 10px;">Jekyll</a> <a href="/tags/Life/" style="font-size: 10px;">Life</a> <a href="/tags/Like-Button/" style="font-size: 10px;">Like Button</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/RSS/" style="font-size: 10px;">RSS</a> <a href="/tags/Ransomware/" style="font-size: 10px;">Ransomware</a> <a href="/tags/Security/" style="font-size: 10px;">Security</a> <a href="/tags/Share-Button/" style="font-size: 10px;">Share Button</a> <a href="/tags/Software/" style="font-size: 10px;">Software</a> <a href="/tags/Ubuntu/" style="font-size: 10px;">Ubuntu</a> <a href="/tags/Webpack/" style="font-size: 10px;">Webpack</a> <a href="/tags/Yii/" style="font-size: 10px;">Yii</a> <a href="/tags/devtools/" style="font-size: 15px;">devtools</a>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="container">
+    <div id="footer-info" class="inner">
+      &copy; 2019 powered by <a href="http://hexo.io/" target="_blank">Hexo</a><br>
+      Theme: <a href="https://github.com/hexojs/hexo-theme-landscape">landscape</a>, edited by <a href="https://github.com/mollykannn" target="_blank">Molly Kan</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+    <a href="/categories_tags" class="mobile-nav-link">Categories &amp; Tags</a>
+  
+</nav>
+    
+<script>
+  var disqus_shortname = 'mollykannn';
+  
+  var disqus_url = 'https://mollykannn.github.io/2018/09/17/shadowsocks/';
+  
+  (function(){
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+<script src="/js/script.js"></script>
+
+</body>
+</html>
