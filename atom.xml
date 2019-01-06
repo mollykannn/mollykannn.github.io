@@ -411,17 +411,16 @@
   </entry>
   
   <entry>
-    <title>Git - 使用SSH對Github進行操作(3)</title>
-    <link href="https://mollykannn.github.io/2014/12/29/git-github-use-method-3/"/>
-    <id>https://mollykannn.github.io/2014/12/29/git-github-use-method-3/</id>
+    <title>Git - 使用Dropbox建立Git倉庫(4)</title>
+    <link href="https://mollykannn.github.io/2014/12/29/git-github-use-method-4/"/>
+    <id>https://mollykannn.github.io/2014/12/29/git-github-use-method-4/</id>
     <published>2014-12-28T16:00:00.000Z</published>
-    <updated>2019-01-01T05:33:58.859Z</updated>
+    <updated>2019-01-01T05:34:04.881Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;每一次上傳檔案到github時也要輸入帳號及密碼是一件很麻煩的事情, 如果使用SSH的話, 就可以避免了這些煩惱了 (笑)&lt;/p&gt;
-&lt;p&gt;參考: &lt;a href=&quot;http://www.dotblogs.com.tw/kirkchen/archive/2013/04/23/use_ssh_to_interact_with_github_in_windows.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Windows使用ssh對Github進行操作 - 愛流浪的小風- 點部落&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;以下是節錄下來的指令:&lt;/p&gt;
+      &lt;p&gt;如果想將某些檔案分享給指定的朋友們一起修改而不常公開給所有人看到, 可以使用dropbox (其實其他的雲端儲存網站也可以的)。&lt;/p&gt;
+&lt;p&gt;參考網址: &lt;a href=&quot;http://ibruce.info/2013/12/30/git-with-dropbox/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;使用Dropbox建立Git私有仓库&lt;/a&gt; , 以下是節錄下來的指令:&lt;/p&gt;
     
     </summary>
     
@@ -433,16 +432,17 @@
   </entry>
   
   <entry>
-    <title>Git - 使用Dropbox建立Git倉庫(4)</title>
-    <link href="https://mollykannn.github.io/2014/12/29/git-github-use-method-4/"/>
-    <id>https://mollykannn.github.io/2014/12/29/git-github-use-method-4/</id>
+    <title>Git - 使用SSH對Github進行操作(3)</title>
+    <link href="https://mollykannn.github.io/2014/12/29/git-github-use-method-3/"/>
+    <id>https://mollykannn.github.io/2014/12/29/git-github-use-method-3/</id>
     <published>2014-12-28T16:00:00.000Z</published>
-    <updated>2019-01-01T05:34:04.881Z</updated>
+    <updated>2019-01-01T05:33:58.859Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;如果想將某些檔案分享給指定的朋友們一起修改而不常公開給所有人看到, 可以使用dropbox (其實其他的雲端儲存網站也可以的)。&lt;/p&gt;
-&lt;p&gt;參考網址: &lt;a href=&quot;http://ibruce.info/2013/12/30/git-with-dropbox/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;使用Dropbox建立Git私有仓库&lt;/a&gt; , 以下是節錄下來的指令:&lt;/p&gt;
+      &lt;p&gt;每一次上傳檔案到github時也要輸入帳號及密碼是一件很麻煩的事情, 如果使用SSH的話, 就可以避免了這些煩惱了 (笑)&lt;/p&gt;
+&lt;p&gt;參考: &lt;a href=&quot;http://www.dotblogs.com.tw/kirkchen/archive/2013/04/23/use_ssh_to_interact_with_github_in_windows.aspx&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Windows使用ssh對Github進行操作 - 愛流浪的小風- 點部落&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;以下是節錄下來的指令:&lt;/p&gt;
     
     </summary>
     
