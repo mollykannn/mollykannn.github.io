@@ -7,7 +7,6 @@ tags:
 published: true
 title: Yii2學習筆記 (1)
 date: 2018-09-16 00:00:00
-photo: /images/post/2018-09-16-start-to-use-yii2-1.png
 ---
 
 從Evernote上拿回一些筆記....

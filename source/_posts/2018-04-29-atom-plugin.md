@@ -7,7 +7,6 @@ tags:
 published: true
 title: Atom Plugin
 date: 2018-04-29 00:00:00
-photo: /images/post/2017-06-20-atom-hot-key.png
 ---
 轉VS code前記錄一下自己在Atom正在使用的Plugin....
 

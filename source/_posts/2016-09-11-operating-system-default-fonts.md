@@ -9,6 +9,10 @@ title: Font - 各作業系統的預設/內置字型
 date: 2016-09-11 00:00:00
 photo: /images/post/2016-09-11-operating-system-default-fonts.jpg
 ---
+> ##### *07-01-2019 更新*
+>
+> 似乎有部分人在查找蘋方體(PingFang)的下載點? 找了找發現apple官網又真的沒有下載點，網上的下載點會不會加甚麼病毒就不知道了...這邊還是請大家小心一點。
+
 ### iOS 預設字型
 
 #### iOS 9 前
