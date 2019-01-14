@@ -10,7 +10,7 @@ tags:
 photos: /images/post/2019-01-14-HTML-and-CSS-Design-and-Build-Websites.jpg
 ---
 
-Url: [HTML&CSS：網站設計建置優化之道](https://www.books.com.tw/products/0010546014)
+[HTML&CSS：網站設計建置優化之道](https://www.books.com.tw/products/0010546014)
 
 入門Web必看的書之一﹐清楚介紹了HTML跟CSS基本會用的語法。這邊節錄了一些經常忘記的語法....
 
