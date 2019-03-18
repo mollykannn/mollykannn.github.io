@@ -6,8 +6,9 @@ category:
 tags:
   - CSS
   - HTML
-photos: /images/post/2019-01-14-HTML-and-CSS-Design-and-Build-Websites.jpg
 ---
+
+{% asset_img 2019-01-14-HTML-and-CSS-Design-and-Build-Websites.jpg %}
 
 [HTML&CSS：網站設計建置優化之道](https://www.books.com.tw/products/0010546014)
 
