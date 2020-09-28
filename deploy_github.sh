@@ -1,6 +1,6 @@
 set -e
 
-yarn run deploy
+yarn run build && yarn run deploy
 
 git pull
 git add .

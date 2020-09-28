@@ -2,7 +2,35 @@
 @import "_variables"
 @import "_util/mixin"
 
-global-reset()
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, figure
+  margin: 0
+  padding: 0
+  border: 0
+  outline: 0
+
+ol, ul 
+  list-style: none
+
+table 
+  border-collapse: separate
+  border-spacing: 0
+  vertical-align: middle
+
+caption, th, td 
+  text-align: left
+  font-weight: normal
+  vertical-align: middle
+
+a img 
+  border: none
+
+input, button
+  margin: 0
+  padding: 0
+
+input::-moz-focus-inner, button::-moz-focus-inner 
+  border: 0
+  padding: 0
 
 input, button
   margin: 0
@@ -23,12 +51,42 @@ input, button
 
 html, body, #container
   height: 100%
+  font-size: 62.5%
 
 body
   background: color-background
   font-size: font-size
   font-family: font-sans
+  font-weight: font-weight
+  line-height: line-height
   -webkit-text-size-adjust: 100%
+
+h1, h2, h3, h4, h5, h6 
+  font-weight: 700
+  line-height: 1.5
+  margin: 0
+  margin-bottom: 1rem
+
+h1
+  font-size: 6rem
+h2
+  font-size: 2.8rem
+h3
+  font-size: 2.4rem
+h4
+  font-size: 2.2rem
+h5
+  font-size: 2.0rem
+h6
+  font-size: 1.8rem
+p, pre, figure, blockquote
+  margin-bottom: 2.5rem
+blockquote
+  background-color: #F5F5F5
+  border-left: 3px solid color-link
+  padding: 1rem
+blockquote p 
+  margin-bottom: 0
 
 .container
   clearfix()
