@@ -1,7 +1,6 @@
 # Header
 menu:
   Archives: /archives
-  Categories & Tags: /categories_tags
 rss: /atom.xml
 
 # Content
@@ -19,7 +18,6 @@ widgets:
 google_analytics: UA-62644130-1
 favicon: /favicon.ico
 twitter: https://twitter.com/mollyKannn
-google_plus:
 fb_admins:
 fb_app_id: 1587998741464898
 

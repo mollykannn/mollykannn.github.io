@@ -13,17 +13,13 @@
       <% last = year; %>
       <section class="archives-wrap">
         <div class="archive-year-wrap">
-          <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><%= year %></a>
+          <a href="<%- url_for(config.archive_dir + '/' + year) %>" class="archive-year"><h4><%= year %></h4></a>
         </div>
         <div class="archives">
     <% } %>
-    <article class="archive-article archive-type-post">
-      <div class="archive-article-inner">
-        <header class="archive-article-header">
-          <%- partial('post/date', {post: post, class_name: 'archive-article-date', date_format: 'MM/DD'}) %>
-          <%- partial('post/title', {post: post, class_name: 'archive-article-title'}) %>
-        </header>
-      </div>
+      <a href="<%- url_for(post.path) %>" class="archive-article">
+        <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished" class="archive-article-date"><%= date(post.date, 'DD/MM') %></time><span class="archive-article-icon">・</span><span class="archive-article-title" itemprop="name"></span><%= post.title %></span>
+      </a>
     </article>
   <% }) %>
   <% if (page.posts.length){ %>

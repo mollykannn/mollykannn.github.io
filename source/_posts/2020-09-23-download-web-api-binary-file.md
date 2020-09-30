@@ -2,10 +2,10 @@
 title: 下載Web API返回的Binary格式檔案
 date: 2020-09-23 19:55:16
 category: 
-  - javascript
+  - Javascript
 tags:
-  - javascript
-  - binary file
+  - Javascript
+  - Binary file
 photos:
 ---
 

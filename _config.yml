@@ -110,6 +110,8 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
+  name: Molly Kan
+  email: mollykannn@gmail.com
   repo: 
     github: https://github.com/mollykannn/mollykannn.github.io
   

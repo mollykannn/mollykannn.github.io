@@ -1,59 +1,43 @@
 .archives-wrap
-  margin: 25px 15px
+  margin: 0 15px
+  padding: 3rem 0
+  border-bottom: 1px solid #ddd
 
 .archive-year-wrap
   margin-bottom: 1em
 
 .archive-year
-  font-size: 1.2em
   color: color-grey
-  line-height: 1em
   text-decoration: none
-  font-weight: bold
   &:hover
     color: color-default
 
 .archives
-  width: 100%
   display: flex
   flex-wrap: wrap
-  border-bottom: 1px solid #ddd
 
 .archive-article
-  flex: 0 0 50%
-
-.archive-article-inner
-  padding: 10px
-  margin-bottom: 15px
-
-.archive-article-title
+  flex: 0 0 100%
   text-decoration: none
-  font-weight: bold
-  color: color-default
+  color: #777
   transition: color 0.2s
-  line-height: line-height
   &:hover
     color: color-link
 
+.archive-article-icon
+  padding: 0 5px
+
 .archive-article-date
-  color: color-grey
-  text-decoration: none
-  font-size: 0.85em
-  line-height: 1em
-  margin-bottom: 0.5em
-  display: block
+  display: inline-block;
+  width: 41px;
 
 #page-nav
   clearfix()
-  margin: 50px auto
-  background: #fff
+  margin: 15px 0 30px 0
   text-align: center
   color: color-grey
-  overflow: hidden
   a, span
-    padding: 10px 20px
-    line-height: 1
-    height: 2ex
+    padding: 0 15px
   a
     color: color-grey
     text-decoration: none
@@ -64,11 +48,8 @@
   .next
     float: right
   .page-number
-    display: inline-block
     @media mq-mobile
       display: none
   .current
     color: color-default
     font-weight: bold
-  .space
-    color: color-border

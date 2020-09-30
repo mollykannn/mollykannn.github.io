@@ -4,8 +4,16 @@
         <%- partial('post/title', {class_name: 'article-title'}) %>
       </header>
       <div class="article-meta">
-        <%- partial('post/date', {class_name: 'article-date', date_format: null}) %>
-        <%- partial('post/category') %>
+        <a href="<%- url_for(post.path) %>" class="article-date">
+          <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, null) %></time>
+        </a><span>・</span>
+        <% if (post.categories && post.categories.length){ %>
+          <%- list_categories(post.categories, {
+            show_count: false,
+            class: 'article-category',
+            style: 'none',
+          }) %>
+        <% } %>
       </div>
     <% } %>
     <%- partial('post/gallery') %>

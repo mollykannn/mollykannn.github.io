@@ -4,48 +4,50 @@
   @media mq-normal
     flex: 0 0 300px
     display: initial 
+      
+#sidebar > .widget-wrap:first-child {
+  padding-top: 50px
+}
 
 .widget-wrap
-  margin: 20px 15px
+  margin: 0 15px
+  padding: 3rem 0
   border-bottom: 1px dashed color-widget-background
-
-.widget-title
-  font-size: 1.2em
-  color: #999
-  line-height: 1em
-  font-weight: bold
-
-.widget
-  @extend $base-style
-  line-height: line-height
-  word-wrap: break-word
-  font-size: 0.9em
   color: color-sidebar-text
-  padding: 20px 15px
-  ul, ol
-    list-style: none
-    margin: 0
-    ul, ol
-      margin-left: 15px
-      list-style: disc
-      margin: 0 20px
-    ul
-      list-style: disc
-    ol
-      list-style: decimal
   a
     color: color-link
     text-decoration: none
     &:hover
       text-decoration: underline
+  p
+    margin-bottom: 0
+  ul, ol
+    margin-left: 15px
+
+.widget-title
+  color: #999
+
+.category-list-item 
+  display: flex;
+  align-items: center;
+
+  .category-list-count
+    font-size: 75%
+    padding-left: 3px
+    color: #999
+    &:before
+      content: "(";
+    &:after
+      content: ")";
 
 .tagcloud
+  margin-left: 15px
   a
     margin-right: 5px
     display: inline-block
 
 .icon_image
-  max-width: 80%
+  max-width: 200px
   margin: 0px auto
   border-radius: 50%
   display: block
@@ -54,15 +56,16 @@
 $icon-size
   font-family: font-icon
   font-size: 30px
-  margin: 10px 5px 0 5px
+  margin: 0 5px
   display: inline-block
 
 .icon-nav
-  margin: 5px 0
+  display: block
   text-align: center
 
 .icon-nav a
   color: color-default
+  transition: color 0.2s
   cursor: pointer
   &:hover
     color: color-grey
@@ -87,8 +90,3 @@ a.twitter
   @extend $icon-size
   &:before
     content: "\f099"
-
-a.pinboard
-  @extend $icon-size
-  &:before
-    content: "\f08d"

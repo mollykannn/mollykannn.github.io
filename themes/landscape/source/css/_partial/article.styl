@@ -1,41 +1,17 @@
 .article
-  margin: 50px 15px
+  margin: 0 15px;
+  padding: 3rem 0;
   border-bottom: 1px solid color-border
 
 .article-meta
-  clearfix()
+  margin-bottom: 1rem;
+  color: color-grey
 
 .article-date
-  text-decoration: none
-  text-transform: uppercase
-  color: color-grey
-  line-height: 1em
-  font-weight: bold
-  float: left
-  margin-bottom: 20px
-
-.article-category
-  line-height: 1em
-  &:before
-    content: "\2022"
-    color: #ccc
-    margin: 0 8px
-
 .article-category-link
   text-decoration: none
-  text-transform: uppercase
   color: color-grey
-  line-height: 1em
   font-weight: bold
-  margin-left: -5px
-  margin-bottom: 20px
-  line-height: 1em
-  color: #ccc
-  &:hover
-    color: color-grey
-
-.article-header
-  padding: 0
 
 .article-title
   text-decoration: none
@@ -129,9 +105,6 @@
 .article-footer
   clearfix()
   font-size: 0.85em
-  line-height: line-height
-  padding-top: line-height
-  padding-bottom: 10px
   a
     color: color-grey
     text-decoration: none
@@ -226,40 +199,29 @@
     display: block
 
 .article-share-input
-  width: 100%
-  background: none
-  box-sizing: border-box
-  font: 14px font-sans
   padding: 0 15px
   color: color-default
-  outline: none
-  border: 1px solid color-border
-  border-radius: 3px 3px 0 0
-  height: 36px
-  line-height: 36px
+  border: 0
+  border-bottom: 1px solid color-border
+  line-height: 3.8rem
+  &:focus {
+    outline: none;
+  }
 
 .article-share-links
-  clearfix()
+  display: flex
   background: color-background
-
-$article-share-link
-  width: 50px
-  height: 36px
-  display: block
-  float: left
-  position: relative
-  color: #999
-  text-shadow: 0 1px #fff
-  &:before
-    font-size: 20px
-    font-family: font-icon
-    absolute-center(@font-size)
+  a
+    flex: 1
     text-align: center
-  &:hover
-    color: #fff
+    font-size: 20px
+    font-family: FontAwesome
+    color: #999
+    text-decoration: none
+    &:hover
+      color: #fff
 
 .article-share-twitter
-  @extend $article-share-link
   &:before
     content: "\f099"
   &:hover
@@ -267,28 +229,11 @@ $article-share-link
     text-shadow: 0 1px darken(color-twitter, 20%)
 
 .article-share-facebook
-  @extend $article-share-link
   &:before
     content: "\f09a"
   &:hover
     background: color-facebook
     text-shadow: 0 1px darken(color-facebook, 20%)
-
-.article-share-pinterest
-  @extend $article-share-link
-  &:before
-    content: "\f0d2"
-  &:hover
-    background: color-pinterest
-    text-shadow: 0 1px darken(color-pinterest, 20%)
-
-.article-share-google
-  @extend $article-share-link
-  &:before
-    content: "\f0d5"
-  &:hover
-    background: color-google
-    text-shadow: 0 1px darken(color-google, 20%)
 
 .article-gallery
   background: #000

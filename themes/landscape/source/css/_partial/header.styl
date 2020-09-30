@@ -1,6 +1,6 @@
 #header
   height: 400px
-  background: url("images/banner.jpg") #000
+  background: url("../images/web/banner.jpg") #000
   background-position: 0 70%
   background-size: cover
   z-index: -1
@@ -19,17 +19,12 @@ $nav-link
   text-decoration: none
   text-shadow: 0 1px rgba(0, 0, 0, 0.2)
   transition: opacity 0.2s
-  display: block
-  padding: 20px 10px
   &:hover
     opacity: 1
 
 .nav-icon
   @extend $nav-link
   font-family: font-icon
-  font-size: font-size
-  width: font-size
-  height: font-size
   cursor: pointer
   padding: 20px 10px
 
@@ -42,6 +37,7 @@ $nav-link
     
 .main-nav-link
   @extend $nav-link
+  padding: 20px 10px
   font-weight: 300
   letter-spacing: 1px
   @media mq-mobile
@@ -101,9 +97,6 @@ $nav-link
 
 #main-nav
   flex: 1
-
-#sub-nav
-  position:relative
 
 #header-title
   height: 65%
