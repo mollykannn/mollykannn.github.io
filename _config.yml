@@ -8,12 +8,12 @@ subtitle:
 description: 毛利，香港人眼中嘅廢青。Analyst Programmer。防止自己失憶﹐記錄各樣IT問題。
 keywords:
 author: Molly Kan
-language: en
+language: zh
 timezone: Asia/Hong_Kong
 portfolio: https://mollykannn.github.io/portfolio/
 github: https://github.com/mollykannn
 linkedin: https://www.linkedin.com/in/mollykan/
-twitter: https://twitter.com/MollyKWebTech
+twitter: https://twitter.com/Mollykannn
 pinboard: https://pinboard.in/u:mollykannn/
 disqus_shortname: mollykannn
 
@@ -115,7 +115,6 @@ deploy:
   repo: 
     github: https://github.com/mollykannn/mollykannn.github.io
   
-
 # feed
 feed:
   type: atom
@@ -128,3 +127,5 @@ feed:
 
   sitemap:
     path: sitemap.xml
+
+all_minifier: true
