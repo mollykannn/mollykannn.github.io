@@ -129,3 +129,20 @@ feed:
     path: sitemap.xml
 
 all_minifier: true
+
+image_minifier:
+  enable: true
+  interlaced: false
+  multipass: false
+  optimizationLevel: 2
+  pngquant: true
+  progressive: false
+  silent: false
+
+responsive_images:
+  pattern: '**/banner/*.+(png|jpg|jpeg)'
+  sizes:
+    small:
+      width: 480
+    medium:
+      width: 770

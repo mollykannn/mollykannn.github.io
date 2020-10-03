@@ -8,7 +8,7 @@ tags:
   - HTML
 ---
 
-{% asset_img 2019-01-14-HTML-and-CSS-Design-and-Build-Websites.jpg %}
+{% asset_img banner/2019-01-14-HTML-and-CSS-Design-and-Build-Websites.jpg banner %}
 
 [HTML&CSS：網站設計建置優化之道](https://www.books.com.tw/products/0010546014)
 
@@ -144,7 +144,7 @@ tags:
 >   none不會留下空白位置, hidden會留下空白位置
 >
 > - border-radius
->   Eg: border-radius: 80px 50px <=可變橢圓形
+>   Eg: border-radius: 80px 50px // 可變橢圓形
 >
 > - list
 >   list-style-type (disc, circle, square)

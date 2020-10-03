@@ -8,8 +8,9 @@ tags:
 published: true
 title: Share/Like Button集合
 date: 2018-12-16 00:00:00
-photos: /images/post/2018-12-16-social-media-share-like-button.png
 ---
+
+{% asset_img banner/2018-12-16-social-media-share-like-button.png banner %}
 
 社交網站上的Share/Like Button集合。
 

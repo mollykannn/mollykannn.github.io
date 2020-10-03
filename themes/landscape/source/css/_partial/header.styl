@@ -6,6 +6,18 @@
   z-index: -1
   display: flex
   flex-wrap: wrap
+  @media screen and (max-width: 2000px)
+      background: url("../images/web/large_banner.jpg") #000
+      background-size: cover;
+      background-position: 0 70%;
+  @media mq-tablet
+      background: url("../images/web/medium_banner.jpg") #000
+      background-size: cover;
+      background-position: 0 70%
+  @media mq-mobile
+      background: url("../images/web/small_banner.jpg") #000
+      background-size: cover;
+      background-position: 0 70%
 
 #navbar
   height: 35%
@@ -26,7 +38,7 @@ $nav-link
   @extend $nav-link
   font-family: font-icon
   cursor: pointer
-  padding: 20px 10px
+  padding: 20px 15px
 
 #main-nav-toggle
   display: none

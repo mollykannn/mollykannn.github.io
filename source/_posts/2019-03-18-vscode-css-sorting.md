@@ -8,7 +8,7 @@ tags:
   - CSS
 ---
 
-{% asset_img 2019-03-18-vscode-css-sorting.jpg %}
+{% asset_img banner/2019-03-18-vscode-css-sorting.jpg banner %}
 
 Reference: [https://blog.othree.net/log/2019/02/24/css-properties-sorting-order/](https://blog.othree.net/log/2019/02/24/css-properties-sorting-order/)
 

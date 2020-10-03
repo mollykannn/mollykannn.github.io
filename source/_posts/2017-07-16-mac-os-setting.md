@@ -7,8 +7,10 @@ tags:
 published: true
 title: MacOS Sierra 基本設定
 date: 2017-07-16 00:00:00
-photo: /images/post/2017-07-16-mac-os-setting.png
 ---
+
+{% asset_img banner/2017-07-16-mac-os-setting.png banner %}
+
 是的，最近轉了新公司，用的是Macbook Pro...雖然自己本來就有一部Macbook Pro，可是都沒有怎樣用來Coding (汗)，於是設定就成為了一大難關 (?)。
 
 於是記錄一下一些基本設定吧...
