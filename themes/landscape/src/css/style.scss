@@ -1,0 +1,113 @@
+@import "variable.scss";
+
+*, *::before, *::after { 
+	margin: 0; padding: 0; 
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+ol, ul {
+	list-style: none;
+}
+
+html,
+body,
+#container {
+  height: 100%;
+  font-size: 62.5%;
+}
+
+body {
+  background: #fff;
+  color: $color-content;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 2.8rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+h4 {
+  font-size: 2.2rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+h6 {
+  font-size: 1.8rem;
+}
+
+p,
+pre,
+figure,
+blockquote {
+  margin-bottom: 2.5rem;
+}
+
+blockquote {
+  padding: 1rem;
+  border-left: 3px solid $color-link;
+  background-color: $color-blockquote;
+}
+
+blockquote p {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+input::-moz-focus-inner,
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a {
+  color: $color-link;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 1220px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@import "header.scss";

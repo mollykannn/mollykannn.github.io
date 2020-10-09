@@ -20,27 +20,40 @@ date: 2018-12-16 00:00:00
 
 Facebook
 
-    <a href="http://www.facebook.com/sharer/sharer.php?u=(URL)" class="(...)" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=570');return false;" target="_blank" title="Share on Facebook"></a>
+```
+    &#60;a href="http://www.facebook.com/sharer/sharer.php?u=(URL)" class="(...)" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=570');return false;" target="_blank" title="Share on Facebook">&#60;/a>
+```
+
 
 Google+
 
-    <a href="https://plus.google.com/share?url=(URL)" class="(...)" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=500');return false;" target="_blank" title="Share on Google+"></a>
+```
+    &#60;a href="https://plus.google.com/share?url=(URL)" class="(...)" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=500');return false;" target="_blank" title="Share on Google+">&#60;/a>
+```
 
 Twitter
     
-    <a href="https://twitter.com/intent/tweet?text=(TITLE)&url=(URL)" class="(...)" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Twitter"></a>
+```
+    &#60;a href="https://twitter.com/intent/tweet?text=(TITLE)&url=(URL)" class="(...)" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Twitter">&#60;/a>
+```
 
 Email
 
-    <a href="mailto:(EMAIL ADDRESS)?subject=(TITLE)&body=(CONTENT)"></a>
+```
+    &#60;a href="mailto:(EMAIL ADDRESS)?subject=(TITLE)&body=(CONTENT)">&#60;/a>
+```
 
 Whatsapp
 
-    <a href="whatsapp://send" data-text="(CONTENT)" data-href="(URL)"></a>
+```
+    &#60;a href="whatsapp://send" data-text="(CONTENT)" data-href="(URL)">&#60;/a>
+```
 
 Line
 
-    <a href="http://line.naver.jp/R/msg/text/?(URL)"></a>
+```
+    &#60;a href="http://line.naver.jp/R/msg/text/?(URL)">&#60;/a>
+```
 
 <br/>
 

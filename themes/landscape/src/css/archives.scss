@@ -1,0 +1,33 @@
+@import "variable.scss";
+
+.archives-wrap {
+	margin-right: 15px;
+	padding: 3rem 0;
+  border-bottom: 1px solid $color-border;
+  & .archive-year {
+    margin-bottom: 1em;
+    color: $color-content;
+    text-decoration: none;
+    &:hover {
+      color: $color-grey;
+    }
+  }
+  & .archives {
+    & .archive-article {
+      display: block;
+      transition: color 0.2s;
+      color: #777;
+      &:hover {
+        color: $color-link;
+        text-decoration: none;
+      }
+      & .archive-article-icon {
+        padding: 0 5px;
+      }
+      & .archive-article-date {
+        display: inline-block;
+        width: 41px;
+      }
+    }
+  }
+}

@@ -19,44 +19,51 @@ tags:
 <!-- more -->
 
 ## HTML
-> - &#60;sup> 
->   字母向上, 4<sup>th</sup> 
->
-> - &#60;sub> 
->   字母向下, H<sub>2</sub>O
->
-> - &#60;strong> & &#60;em>
->   都是顯示粗體，但現在常用的是&#60;em>
->
-> - &#60;blockquote> & &#60;q>
->   引用，現在常用的是&#60;blockquote>
->
-> - &#60;abbr>
->   縮寫, &#60;abbr title="Professor">Prof&#60;/abbr>
->
-> - &#60;dfn>
->   解釋術語
->
-> - &#60;address>
->   地址
->
-> - &#60;del>
->   刪除該句子
 
-#### &#60;table>
-> - &#60;table>, &#60;tr>, &#60;td>
-> - &#60;colspan>, &#60;rowspan>
-> - &#60;cellpadding>, &#60;cellspacing>, &#60;border>, &#60;bgcolor>
-> - &#60;th> // 標題
-> - &#60;thead>, &#60;tbody>, &#60;tfoot> // 包在tr外
+```
+&#60;sup> 
+    字母向上, 4<sup>th</sup> 
 
-#### &#60;video>
-> - src, width, height
-> - poster="image.jpg" (播放之前所顯示的圖像)
-> - controls (播放控制鈕)
-> - autoplay (自動播放)
-> - loop (重覆播放)
-> - preload - none (之前不載入視訊), auto (自動載入視訊), metadata (收集第一個影格, 片長, 播放清單) 
+&#60;sub> 
+   字母向下, H<sub>2</sub>O
+
+&#60;strong> & &#60;em>
+   都是顯示粗體，但現在常用的是&#60;em>
+
+&#60;blockquote> & &#60;q>
+   引用，現在常用的是&#60;blockquote>
+
+&#60;abbr>
+   縮寫, &#60;abbr title="Professor">Prof&#60;/abbr>
+
+&#60;dfn>
+   解釋術語
+
+&#60;address>
+   地址
+
+&#60;del>
+   刪除該句子
+```
+
+```
+&#60;table>
+&#60;table>, &#60;tr>, &#60;td>
+&#60;colspan>, &#60;rowspan>
+&#60;cellpadding>, &#60;cellspacing>, &#60;border>, &#60;bgcolor>
+&#60;th> // 標題
+&#60;thead>, &#60;tbody>, &#60;tfoot> // 包在tr外
+```
+
+```
+&#60;video>
+src, width, height
+poster="image.jpg" (播放之前所顯示的圖像)
+controls (播放控制鈕)
+autoplay (自動播放)
+loop (重覆播放)
+preload - none (之前不載入視訊), auto (自動載入視訊), metadata (收集第一個影格, 片長, 播放清單) 
+```
 
 #### &#60;audio>
 > - src, width, height
@@ -67,18 +74,20 @@ tags:
 > - preload - none (之前不載入視訊), auto (自動載入視訊), metadata (收集第一個影格, 片長, 播放清單) 
     
 #### HTML5 版面元素
-    <div id="page">
-        <header>, <nav>
-        <hgroup> (標題群組)
-        <div id ="content">
-            <article>
-            <section> (將相關內容組在一起)
-            <figure>, <figcaption> (圖表)
-        </div>
-            <aside> (附加)
-        <footer>
-    </div>
 
+```
+    &#60;div id="page">
+        &#60;header>, &#60;nav>
+        &#60;hgroup> (標題群組)
+        &#60;div id ="content">
+            &#60;article>
+            &#60;section> (將相關內容組在一起)
+            &#60;figure>, &#60;figcaption> (圖表)
+        &#60;/div>
+            &#60;aside> (附加)
+        &#60;footer>
+    &#60;/div>
+```
 ### Meta
 > - description, keywords, author
 > - robots - 是否應將此頁加到搜查結果 (nofollow)

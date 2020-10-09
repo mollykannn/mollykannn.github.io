@@ -1,0 +1,96 @@
+@import "variable.scss";
+
+/* header */
+.header {
+  height: 400px;
+  background: url("../images/banner.jpg") #000;
+  background-position: 0 70%;
+  background-size: cover;
+  @media screen and (max-width: 2000px) {
+    background: url("../images/large_banner.jpg") #000;
+    background-position: 0 70%;
+    background-size: cover;
+  }
+
+  @include mq-tablet {
+    background: url("../images/medium_banner.jpg") #000;
+    background-position: 0 70%;
+    background-size: cover;
+  }
+
+  @include mq-mobile {
+    background: url("../images/small_banner.jpg") #000;
+    background-position: 0 70%;
+    background-size: cover;
+  }
+}
+
+.navbar {
+  display: flex;
+  height: 35%;
+  & .main-nav {
+    flex: 1;
+  }
+  & .sub-nav .column,
+  & .main-nav .column {
+    display: inline-block;
+    margin-top: 20px;
+    padding-right: 15px;
+    transition: opacity 0.2s;
+    opacity: 0.6;
+    color: #fff;
+    text-shadow: 0 1px rgba(0, 0, 0, 0.2);
+    &:hover {
+      opacity: 1;
+      text-decoration: none;
+    }
+    &:last-of-type {
+      padding-right: 0;
+    }
+  }
+  
+}
+
+#search-form-wrap {
+  position: absolute;
+  top: 45px;
+  right: 15px;
+  width: 200px;
+  padding: 10px 7px;
+  transition: opacity 0.2s;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  &.on {
+    opacity: 1;
+  }
+  & .search-form {
+    display: flex;
+  }
+  & .search-form-input {
+    width: calc(100% - 25px);
+    border: none;
+    outline: none;
+    &::-webkit-search-results-decoration,
+    &::-webkit-search-cancel-button {
+      -webkit-appearance: none;
+    }
+  } 
+  & .search-form-submit {
+    border: none;
+    background: none;
+    color: $color-grey;
+    line-height: 0;
+  }
+}
+
+.header-title {
+  text-align: center;
+  & a {
+    color: #fff;
+    font-weight: 300;
+    letter-spacing: 0.5rem;
+    text-decoration: none;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  }
+}

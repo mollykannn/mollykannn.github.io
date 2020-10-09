@@ -1,0 +1,122 @@
+@import "variable.scss";
+@import "article.scss";
+@import "archives.scss";
+
+.flex-content {
+  display: flex;
+  flex-wrap: nowrap;
+  @include mq-tablet {
+    flex-wrap: wrap;
+  }
+}
+
+#main {
+  flex: 1;
+  overflow: hidden;
+}
+
+/* page */
+#page-nav {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 30px 0;
+  & a,
+  & span {
+    padding: 0 15px;
+    color: $color-grey;
+    &:hover {
+      color: $color-content;
+      text-decoration: none;
+    }
+  }
+  & .current {
+    font-weight: bold;
+  }
+  & .page-number,
+  & .space {
+    @include mq-mobile {
+      display: none;
+    }
+  }
+}
+
+/*footer*/
+#footer {
+  padding: 50px 0;
+  background: #262a30;
+  color: $color-grey;
+}
+
+/*sidebar*/
+#sidebar {
+  display: none;
+  border-left: 1px solid $color-border;
+  @include mq-normal {
+    display: initial;
+    flex: 0 0 300px;
+  }
+  & > .widget-wrap:first-child {
+    padding-top: 50px;
+  }
+}
+
+.widget-wrap {
+  margin-left: 15px;
+  padding: 3rem 0;
+  border-bottom: 1px dashed $color-border;
+  & ul,
+  & ol {
+    margin-left: 15px;
+  }
+  & .widget-title {
+    color: $color-grey;
+  }
+}
+
+.introd {
+  & .icon {
+    display: block;
+    max-width: 200px;
+    margin: 0px auto;
+    margin-bottom: 15px;
+    border-radius: 50%;
+  }
+  & .icon-nav {
+    display: block;
+    text-align: center;
+    & .link-icon {
+      display: inline-block;
+      margin: 0 5px;
+      transition: color 0.2s;
+      color: $color-content;
+      font-size: 30px;
+      &:hover {
+        color: $color-grey;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.category-list {
+  & .category-list-item {
+    & .category-list-count {
+      padding-left: 3px;
+      color: $color-grey;
+      font-size: 75%;
+      &:before {
+        content: "(";
+      }
+      &:after {
+        content: ")";
+      }
+    }
+  }
+}
+
+.tagcloud {
+  margin-left: 15px;
+  & a {
+    margin-right: 5px;
+  }
+}

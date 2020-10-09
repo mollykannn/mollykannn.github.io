@@ -3,17 +3,6 @@
 
 <head>
   <meta charset="utf-8">
-  <% if (theme.google_analytics){ %>
-  <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=<%= theme.google_analytics %>"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-
-    gtag('config', '<%= theme.google_analytics %>');
-  </script>
-  <% } %>
   <%
   var title = page.title;
 
@@ -34,7 +23,8 @@
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="google-site-verification" content="kjEw7uDbYg7bZoCGjfiqvLm_iC3E08x5i1ghUfFPRL0" />
-  <link rel="preload" href="/css/fonts/fontawesome-webfont.woff" as="font" type="font/woff" crossorigin>
+  <%- css({ href: 'css/style.css' }) %>
+  <%- css({ href: 'css/content.css', media: "print", onload: "this.media='all'" }) %>
   <!-- Google Search Console -->
   <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
   <% if (theme.rss){ %>
@@ -43,13 +33,13 @@
   <% if (theme.favicon){ %>
   <link rel="icon" href="<%- theme.favicon %>">
   <% } %>
-  <%- css('css/style') %>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/tomorrow-night.min.css" media="print" onload="this.media='all'" />
 </head>
 
 <body>
   <div id="wrap">
     <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
-    <div class="container flex">
+    <div class="container flex-content">
       <section id="main"><%- body %></section>
       <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
       <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
@@ -57,28 +47,52 @@
     </div>
     <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
   </div>
-  <nav id="mobile-nav">
-    <% for (var i in theme.menu){ %>
-    <a href="<%- url_for(theme.menu[i]) %>" class="mobile-nav-link"><%= i %></a>
-    <% } %>
-  </nav>
-  <% if (config.disqus_shortname){ %>
+  <%- js({ src: 'js/script', async: true }) %>
+  <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.2/dist/lazyload.min.js"></script>
   <script>
-    var disqus_shortname = '<%= config.disqus_shortname %>';
-        <% if (page.permalink) { %>
-        var disqus_url = '<%= page.permalink %>';
-        <% } %>
-      (function () {
-        var dsq = document.createElement('script');
-        dsq.type = 'text/javascript';
-        dsq.async = true;
-        dsq.src = '//' + disqus_shortname + '.disqus.com/<% if (page.comments) { %>embed.js<% } else { %>count.js<% } %>';
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-      })();
+    var lazyLoadInstance = new LazyLoad();
+    lazyLoadInstance.update();
   </script>
+  <% if (theme.google_analytics){ %>
+  <script>
+    window.ga_tid = "<%= theme.google_analytics %>";
+    window.ga_api = "https://proud-field-6446.mollykannn.workers.dev"; 
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/cfga@1.0.3" async></script>
   <% } %>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <%- js('js/script') %>
+  <% if (config.disqus.shortname && page.permalink){ %>
+  <div id="disqus_thread"></div>
+  <script>
+    function loadDisqus() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://<%= config.disqus.shortname %>.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+      window.disqus_config = function () {
+        this.page.url = '<%= page.permalink %>';
+      };
+    }
+    var runningOnBrowser = typeof window !== "undefined";
+    var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+    var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+    setTimeout(function () {
+      if (!isBot && supportsIntersectionObserver) {
+        var disqus_observer = new IntersectionObserver(function (entries) {
+          if (entries[0].isIntersecting) {
+            loadDisqus();
+            disqus_observer.disconnect();
+          }
+        }, { threshold: [0] });
+        disqus_observer.observe(document.getElementById('disqus_thread'));
+      } else {
+        loadDisqus();
+      }
+    }, 1);
+  </script>
+  <% if (config.disqus_count) { %>
+  <script id="dsq-count-scr" src="https://<%= config.disqus.shortname %>.disqus.com/count.js" async></script>
+  <% } %>
+  <% } %>
 </body>
 
 </html>
