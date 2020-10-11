@@ -10,7 +10,7 @@ title: Share/Like Button集合
 date: 2018-12-16 00:00:00
 ---
 
-{% asset_img banner/2018-12-16-social-media-share-like-button.png banner %}
+{% asset_img banner banner/2018-12-16-social-media-share-like-button.png %}
 
 社交網站上的Share/Like Button集合。
 
@@ -20,39 +20,39 @@ date: 2018-12-16 00:00:00
 
 Facebook
 
-```
-    &#60;a href="http://www.facebook.com/sharer/sharer.php?u=(URL)" class="(...)" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=570');return false;" target="_blank" title="Share on Facebook">&#60;/a>
+```html
+    <a href="http://www.facebook.com/sharer/sharer.php?u=(URL)" class="(...)" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=570');return false;" target="_blank" title="Share on Facebook"></a>
 ```
 
 
 Google+
 
-```
-    &#60;a href="https://plus.google.com/share?url=(URL)" class="(...)" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=500');return false;" target="_blank" title="Share on Google+">&#60;/a>
+```html
+    <a href="https://plus.google.com/share?url=(URL)" class="(...)" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=500');return false;" target="_blank" title="Share on Google+"></a>
 ```
 
 Twitter
     
-```
-    &#60;a href="https://twitter.com/intent/tweet?text=(TITLE)&url=(URL)" class="(...)" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Twitter">&#60;/a>
+```html
+    <a href="https://twitter.com/intent/tweet?text=(TITLE)&url=(URL)" class="(...)" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600');return false;" target="_blank" title="Share on Twitter"></a>
 ```
 
 Email
 
-```
-    &#60;a href="mailto:(EMAIL ADDRESS)?subject=(TITLE)&body=(CONTENT)">&#60;/a>
+```html
+    <a href="mailto:(EMAIL ADDRESS)?subject=(TITLE)&body=(CONTENT)"></a>
 ```
 
 Whatsapp
 
-```
-    &#60;a href="whatsapp://send" data-text="(CONTENT)" data-href="(URL)">&#60;/a>
+```html
+    <a href="whatsapp://send" data-text="(CONTENT)" data-href="(URL)"></a>
 ```
 
 Line
 
-```
-    &#60;a href="http://line.naver.jp/R/msg/text/?(URL)">&#60;/a>
+```html
+    <a href="http://line.naver.jp/R/msg/text/?(URL)"></a>
 ```
 
 <br/>
@@ -60,9 +60,7 @@ Line
 ### Like Button
 
 1. [Facebook](https://developers.facebook.com/docs/plugins/like-button)
-
 2. [Google+](https://developers.google.com/+/web/+1button/)
-
 3. [Twitter](
 https://about.twitter.com/resources/buttons#tweet)
 

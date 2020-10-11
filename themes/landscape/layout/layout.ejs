@@ -21,19 +21,40 @@
   }
   %>
   <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="google-site-verification" content="kjEw7uDbYg7bZoCGjfiqvLm_iC3E08x5i1ghUfFPRL0" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <!-- favicon -->
+  <% if (theme.head.favicon.ico) { %>
+    <link href="<%= theme.head.favicon.ico %>" rel="icon" type="image/ico">
+  <% } %>
+  <% if (theme.head.favicon.app_touch_icon) { %>
+    <link href="<%= theme.head.favicon.app_touch_icon %>" rel="apple-touch-icon" sizes="180x180">
+  <% } %>
+  <% if (theme.head.favicon.large) { %>
+    <link href="<%= theme.head.favicon.large %>" rel="icon" type="image/png" sizes="192x192">
+  <% } %>
+  <% if (theme.head.favicon.medium) { %>
+    <link href="<%= theme.head.favicon.medium %>" rel="icon" type="image/png" sizes="32x32">
+  <% } %>
+  <% if (theme.head.favicon.small) { %>
+    <link href="<%= theme.head.favicon.small %>" rel="icon" type="image/png" sizes="16x16">
+  <% } %>
+  <!-- theme css -->
   <%- css({ href: 'css/style.css' }) %>
-  <%- css({ href: 'css/content.css', media: "print", onload: "this.media='all'" }) %>
-  <!-- Google Search Console -->
-  <%- open_graph({twitter_id: theme.twitter, google_plus: theme.google_plus, fb_admins: theme.fb_admins, fb_app_id: theme.fb_app_id}) %>
-  <% if (theme.rss){ %>
-  <link rel="alternate" href="<%= url_for(theme.rss) %>" title="<%= config.title %>" type="application/atom+xml">
+  <%- css({ href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/tomorrow-night.min.css', media: 'print', onload: "this.media='all'" }) %>
+  <%- open_graph({twitter_id: theme.head.twitter}) %>
+  <!-- site-verification -->
+  <% if (theme.head.site_verification.google) { %>
+    <meta name="google-site-verification" content="<%= theme.head.site_verification.google %>" />
   <% } %>
-  <% if (theme.favicon){ %>
-  <link rel="icon" href="<%- theme.favicon %>">
+  <!-- RSS -->
+  <% if (theme.rss) { %>
+    <link rel="alternate" type="application/atom+xml" href="<%= url_for(theme.rss) %>" title="<%= config.title %>">
   <% } %>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/tomorrow-night.min.css" media="print" onload="this.media='all'" />
+  <!-- theme color -->
+  <% if (theme.head.theme_color) { %>
+    <meta name="theme-color" content="<%= theme.head.theme_color %>">
+  <% } %>
 </head>
 
 <body>
@@ -60,12 +81,11 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/cfga@1.0.3" async></script>
   <% } %>
-  <% if (config.disqus.shortname && page.permalink){ %>
-  <div id="disqus_thread"></div>
+  <% if (theme.config.disqus.shortname && page.permalink){ %>
   <script>
     function loadDisqus() {
       var d = document, s = d.createElement('script');
-      s.src = 'https://<%= config.disqus.shortname %>.disqus.com/embed.js';
+      s.src = 'https://<%= theme.config.disqus.shortname %>.disqus.com/embed.js';
       s.setAttribute('data-timestamp', +new Date());
       (d.head || d.body).appendChild(s);
       window.disqus_config = function () {
@@ -89,8 +109,8 @@
       }
     }, 1);
   </script>
-  <% if (config.disqus_count) { %>
-  <script id="dsq-count-scr" src="https://<%= config.disqus.shortname %>.disqus.com/count.js" async></script>
+  <% if (theme.config.disqus_count) { %>
+  <script id="dsq-count-scr" src="https://<%= theme.config.disqus.shortname %>.disqus.com/count.js" async></script>
   <% } %>
   <% } %>
 </body>

@@ -10,20 +10,12 @@ keywords:
 author: Molly Kan
 language: zh
 timezone: Asia/Hong_Kong
-portfolio: https://mollykannn.github.io/portfolio/
-github: https://github.com/mollykannn
-linkedin: https://www.linkedin.com/in/mollykan/
-twitter: https://twitter.com/Mollykannn
-pinboard: https://pinboard.in/u:mollykannn/
-disqus:
-  shortname: mollykannn
-  count: false
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://mollykannn.github.io
 root: /
-permalink: :year/:month/:day/:title/
+permalink: post/:title/
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks

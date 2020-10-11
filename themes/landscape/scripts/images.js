@@ -1,27 +1,12 @@
 "use strict";
-
-// if (!hexo.config.lazyload || !hexo.config.lazyload.enable) {
-//   return;
-// }
-// if (hexo.config.lazyload.onlypost) {
-//   hexo.extend.filter.register("after_post_render", function (data) {
-//     return lazyProcess.call(this, data.content);
-//   });
-// } else {
 hexo.extend.filter.register("after_render:html", function (htmlContent) {
-  return lazyProcess.call(this, htmlContent);
-});
-// }
-
-const fs = require("hexo-fs");
-function lazyProcess(htmlContent) {
   return htmlContent.replace(
-    /<img(\s*?)src="(.*?)"(.*?)>/gi,
+    /<img(.*?)src="(.*?)"(.*?)>/gi,
     (str, p1, p2, p3) => {
       if (/data-src/gi.test(str)) {
         return str;
       }
-      if (/title="banner"/gi.test(str)) {
+      if (/class="banner"/gi.test(str)) {
         return str.replace(
           str,
           `<picture>
@@ -30,14 +15,19 @@ function lazyProcess(htmlContent) {
               /.([^/]*)$/,
               `/medium_$1`
             )}" />
-            <img class="lazy" src="images/preload.jpg" data-src="${p2.replace(
+            <img class="lazy banner" src="/images/preload.jpg" data-src="${p2.replace(
               /.([^/]*)$/,
               `/small_$1`
             )}">
           </picture>`
         );
+      } else if (/class="(.*?)"/gi.test(str)){
+        str = str.replace(/class="(.*?)"/gi, (classStr, p1) => {
+            return classStr.replace(p1, `${p1} lazy`);
+        })
+        return str.replace(p2, `/images/preload.jpg" data-src="${p2}`);
       }
-      return str.replace(p3, `${p3} class="lazy" src="images/preload.jpg" data-src="${p2}"`);
+      return str.replace(str, `<img${p1}class="lazy" src="/images/preload.jpg" data-src="${p2}"${p3}>`);
     }
   );
-}
+});

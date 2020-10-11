@@ -1,5 +1,3 @@
-@import "variable.scss";
-
 .article {
 	margin-right: 15px;
 	padding: 2rem 0;
@@ -35,6 +33,12 @@
       background-repeat: no-repeat;
       background-position: bottom;
       background-size: auto 0.6em;
+    }
+    & ol,
+    & ul {
+      margin-bottom: 1em;
+      list-style: inherit;
+      padding-inline-start: 40px;
     }
   }
   & .article-more-link {

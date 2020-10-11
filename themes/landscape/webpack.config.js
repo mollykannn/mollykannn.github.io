@@ -6,7 +6,6 @@ module.exports = {
   entry: {
     script: "./src/js/script.js",
     style: "./src/css/style.scss",
-    content: "./src/css/content.scss",
   },
   output: {
     filename: "js/[name].js",

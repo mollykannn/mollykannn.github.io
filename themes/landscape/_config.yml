@@ -3,6 +3,31 @@ menu:
   Archives: /archives
 rss: /atom.xml
 
+head:
+  #https://favicon.io/favicon-converter/
+  favicon:
+    ico: /images/favicon/favicon.ico #48*48
+    small: /images/favicon/favicon-16x16.png #16*16 
+    medium: /images/favicon/favicon-32x32.png #32*32 
+    app_touch_icon: /images/favicon/apple-touch-icon.png #180x180
+    large: /images/favicon/android-chrome-192x192.png #192x192
+  site_verification:
+    google: kjEw7uDbYg7bZoCGjfiqvLm_iC3E08x5i1ghUfFPRL0
+  theme_color: "#03a9f4"
+  twitter: https://twitter.com/Mollykannn
+
+config:
+  disqus:
+    shortname: mollykannn
+    count: false  
+  google_analytics: UA-62644130-1
+
+introduction:
+  portfolio: https://mollykannn.github.io/portfolio/
+  github: https://github.com/mollykannn
+  linkedin: https://www.linkedin.com/in/mollykan/
+  twitter: https://twitter.com/Mollykannn
+    
 # Content
 excerpt_link: Read More
 
@@ -13,11 +38,3 @@ widgets:
 - recent_posts
 - category
 - tagcloud
-
-# Miscellaneous
-google_analytics: UA-62644130-1
-favicon: /favicon.ico
-twitter: https://twitter.com/Mollykannn
-fb_admins:
-fb_app_id: 1587998741464898
-
