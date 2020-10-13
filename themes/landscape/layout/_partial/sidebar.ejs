@@ -1,5 +1,36 @@
 <aside id="sidebar">
-  <% theme.widgets.forEach(function(widget){ %>
-    <%- partial('_widget/' + widget) %>
-  <% }) %>
+  <!-- Self Introduction -->
+  <div class="widget-wrap introd">
+    <img class="icon" alt="Mollys-icon" src="/images/icon.jpg">
+    <p><%= config.description %></p>
+    <div class="icon-nav">
+      <a href="<%= theme.introduction.portfolio %>" class="link-icon user"></a>
+      <a href="<%= theme.introduction.github %>" class="link-icon github"></a>
+      <a href="<%= theme.introduction.linkedin %>" class="link-icon linkedin"></a>
+      <a href="<%= theme.introduction.twitter %>" class="link-icon twitter"></a>
+    </div>
+  </div>
+  <!-- Recent Posts -->
+  <% if (site.posts.length) { %>
+  <div class="widget-wrap recentPost">
+    <h4 class="widget-title"><%= __('recent_posts') %></h4>
+    <%- list_posts({amount: 5}) %>
+  </div>
+  <% } %>
+  <!-- Category -->
+  <% if (site.categories.length) { %>
+  <div class="widget-wrap">
+    <h4 class="widget-title"><%= __('categories') %></h4>
+    <%- list_categories({show_count: true}) %>
+  </div>
+  <% } %>
+  <!-- Tag Cloud -->
+  <% if (site.tags.length){ %>
+  <div class="widget-wrap tagCloud">
+    <h4 class="widget-title"><%= __('tagcloud') %></h4>
+    <div class="tagcloud-list">
+      <%- tagcloud() %>
+    </div>
+  </div>
+  <% } %>
 </aside>

@@ -1,8 +1,3 @@
-# Header
-menu:
-  Archives: /archives
-rss: /atom.xml
-
 head:
   #https://favicon.io/favicon-converter/
   favicon:
@@ -15,6 +10,7 @@ head:
     google: kjEw7uDbYg7bZoCGjfiqvLm_iC3E08x5i1ghUfFPRL0
   theme_color: "#03a9f4"
   twitter: https://twitter.com/Mollykannn
+  open_search: true
 
 config:
   disqus:
@@ -30,11 +26,3 @@ introduction:
     
 # Content
 excerpt_link: Read More
-
-# Sidebar
-sidebar: true
-widgets:
-- self_introduction
-- recent_posts
-- category
-- tagcloud

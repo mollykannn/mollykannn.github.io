@@ -116,7 +116,6 @@
                       })
                       str += '<a href="' + data.url + '"><p class="tile-title search-result-title">' + match_title + '</p></a>';
                       str += '<p class="text-gray search-result-summary">';
-                      str += '<span class="saerch-result-date">' + data_date + '</span>';
                       var content = data.content;
                       if (first_occur >= 0) {
                           /* cut out characters & highlight keyword in content

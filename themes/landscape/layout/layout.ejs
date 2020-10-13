@@ -55,6 +55,10 @@
   <% if (theme.head.theme_color) { %>
     <meta name="theme-color" content="<%= theme.head.theme_color %>">
   <% } %>
+  <!-- open search -->
+  <% if (theme.head.open_search) { %>
+    <link href="/opensearch.xml" rel="search" type="application/opensearchdescription+xml" title="<%= config.title %>">
+  <% } %>
 </head>
 
 <body>
@@ -62,9 +66,7 @@
     <%- partial('_partial/header', null, {cache: !config.relative_link}) %>
     <div class="container flex-content">
       <section id="main"><%- body %></section>
-      <% if (theme.sidebar && theme.sidebar !== 'bottom'){ %>
       <%- partial('_partial/sidebar', null, {cache: !config.relative_link}) %>
-      <% } %>
     </div>
     <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
   </div>
@@ -74,44 +76,12 @@
     var lazyLoadInstance = new LazyLoad();
     lazyLoadInstance.update();
   </script>
-  <% if (theme.google_analytics){ %>
+  <% if (theme.config.google_analytics){ %>
   <script>
-    window.ga_tid = "<%= theme.google_analytics %>";
+    window.ga_tid = "<%= theme.config.google_analytics %>";
     window.ga_api = "https://proud-field-6446.mollykannn.workers.dev"; 
   </script>
   <script src="https://cdn.jsdelivr.net/npm/cfga@1.0.3" async></script>
-  <% } %>
-  <% if (theme.config.disqus.shortname && page.permalink){ %>
-  <script>
-    function loadDisqus() {
-      var d = document, s = d.createElement('script');
-      s.src = 'https://<%= theme.config.disqus.shortname %>.disqus.com/embed.js';
-      s.setAttribute('data-timestamp', +new Date());
-      (d.head || d.body).appendChild(s);
-      window.disqus_config = function () {
-        this.page.url = '<%= page.permalink %>';
-      };
-    }
-    var runningOnBrowser = typeof window !== "undefined";
-    var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
-    var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
-    setTimeout(function () {
-      if (!isBot && supportsIntersectionObserver) {
-        var disqus_observer = new IntersectionObserver(function (entries) {
-          if (entries[0].isIntersecting) {
-            loadDisqus();
-            disqus_observer.disconnect();
-          }
-        }, { threshold: [0] });
-        disqus_observer.observe(document.getElementById('disqus_thread'));
-      } else {
-        loadDisqus();
-      }
-    }, 1);
-  </script>
-  <% if (theme.config.disqus_count) { %>
-  <script id="dsq-count-scr" src="https://<%= theme.config.disqus.shortname %>.disqus.com/count.js" async></script>
-  <% } %>
   <% } %>
 </body>
 

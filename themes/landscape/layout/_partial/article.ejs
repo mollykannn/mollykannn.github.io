@@ -1,102 +1,111 @@
-<article id="<%= post.layout %>-<%= post.slug %>" class="article article-type-<%= post.layout %>" itemscope itemprop="blogPost">
-    <% if (post.link || post.title){ %>
-      <header class="article-header">
-        <% if (post.link){ %>
-          <h2 itemprop="name">
-            <a class="article-title" href="<%- url_for(post.link) %>" target="_blank" itemprop="url"><%= post.title %></a>
-          </h2>
-        <% } else if (post.title){ %>
-          <% if (index){ %>
-            <h2 itemprop="name">
-              <a class="article-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
-            </h2>
-          <% } else { %>
-            <h2 class="article-title" itemprop="name">
-              <%= post.title %>
-            </h2>
-          <% } %>
-        <% } %>
-      </header>
-      <div class="article-meta">
-        <a href="<%- url_for(post.path) %>" class="article-date">
-          <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= date(post.date, null) %></time>
-        </a><span>・</span>
-        <% if (post.categories && post.categories.length){ %>
-          <%- list_categories(post.categories, {
+<article class="article" itemscope itemprop="blogPost">
+  <!-- Title -->
+  <h2 itemprop="name">
+    <a class="article-title" href="<%- url_for(post.path) %>"><%= post.title %></a>
+  </h2>
+  <!-- Date Category -->
+  <div class="article-meta">
+    <a class="article-date" href="<%- url_for(post.path) %>"><%= date(post.date, null) %></a>
+    <span>・</span>
+    <% if (post.categories){ %>
+    <%- list_categories(post.categories, {
             show_count: false,
-            class: 'article-category',
             style: 'none',
           }) %>
-        <% } %>
-      </div>
     <% } %>
-    <div class="article-entry" itemprop="articleBody">
-      <% if (post.excerpt && index){ %>
-        <%- post.excerpt %>
-        <% if (theme.excerpt_link){ %>
-          <p>
-            <a href="<%- url_for(post.path) %>#more" class="article-more-link"><%= theme.excerpt_link %></a>
-          </p>
-        <% } %>
-      <% } else { %>
-        <%- post.content %>
-      <% } %>
-    </div>
-    <footer class="article-footer">
-      <% if (post.tags && post.tags.length){ %>
-        <%- list_tags(post.tags, {
+  </div>
+  <!-- Content -->
+  <div class="article-entry">
+    <% if (post.excerpt && index){ %>
+    <%- post.excerpt %>
+    <% if (theme.excerpt_link){ %>
+    <a href="<%- url_for(post.path) %>#more" class="article-more-link"><%= theme.excerpt_link %></a>
+    <% } %>
+    <% } else { %>
+    <%- post.content %>
+    <% } %>
+  </div>
+  <!-- Footer -->
+  <div class="article-footer">
+    <% if (post.tags && post.tags.length) { %>
+    <%- list_tags(post.tags, {
           show_count: false,
-          class: 'article-tag'
         }) %>
+    <% } %>
+    <div class="article-others">
+      <% if (theme.config.disqus.shortname) { %>
+      <a href="<%- post.permalink %>#disqus_thread" class="link"><i class="icon comment"></i><%= __('comment') %></a>
       <% } %>
-      <div class="article-others">
-        <% if (post.comments && theme.config.disqus.shortname){ %>
-          <a href="<%- post.permalink %>#disqus_thread" class="link article-comment-link"><svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" viewBox="0 0 512 512"><path fill="currentColor" d="M256 32C114.6 32 0 125.1 0 240c0 49.6 21.4 95 57 130.7C44.5 421.1 2.7 466 2.2 466.5c-2.2 2.3-2.8 5.7-1.5 8.7S4.8 480 8 480c66.3 0 116-31.8 140.6-51.4 32.7 12.3 69 19.4 107.4 19.4 141.4 0 256-93.1 256-208S397.4 32 256 32z"/></svg><%= __('comment') %></a>
-        <% } %>
-        <a data-url="<%- post.permalink %>" data-id="<%= post._id %>" class="link article-share-link" onclick="shareLink('<%= post._id %>')">
-          <svg xmlns="http://www.w3.org/2000/svg" width="13px" height="13px" viewBox="0 0 512 512"><path fill="currentColor" d="M503.691 189.836L327.687 37.851C312.281 24.546 288 35.347 288 56.015v80.053C127.371 137.907 0 170.1 0 322.326c0 61.441 39.581 122.309 83.333 154.132 13.653 9.931 33.111-2.533 28.077-18.631C66.066 312.814 132.917 274.316 288 272.085V360c0 20.7 24.3 31.453 39.687 18.164l176.004-152c11.071-9.562 11.086-26.753 0-36.328z"/></svg>
-          <%= __('share') %></a>
-        <div class="article-share-box" id="<%= post._id %>">
-          <input class="article-share-input" value="<%- post.permalink %>">
-          <div class="article-share-links">
-            <a href="https://twitter.com/intent/tweet?url=<%- post.permalink %>" class="column article-share-twitter" target="_blank" title="Twitter">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
-            <a href="https://www.facebook.com/sharer.php?u=<%- post.permalink %>" class="column article-share-facebook" target="_blank" title="Facebook">
-              <svg xmlns="http://www.w3.org/2000/svg" width="17px" height="17px" viewBox="0 0 512 512"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"/></svg></a>
-          </div>
+      <a data-url="<%- post.permalink %>" class="link" onclick="shareLink('<%= post._id %>')"><i
+          class="icon share"></i><%= __('share') %></a>
+      <div class="article-share-box" id="<%= post._id %>">
+        <input class="article-share-input" value="<%- post.permalink %>">
+        <div class="article-share-links">
+          <a href="https://twitter.com/intent/tweet?url=<%- post.permalink %>" class="column article-share-twitter"
+            target="_blank" title="Twitter">
+            <i class="icon twitter"></i></a>
+          <a href="https://www.facebook.com/sharer.php?u=<%- post.permalink %>" class="column article-share-facebook"
+            target="_blank" title="Facebook">
+            <i class="icon facebook"></i>
+          </a>
         </div>
       </div>
-    </footer>
+    </div>
+  </div>
+  <!-- Next,Prev Post -->
   <% if (!index){ %>
-    <% if (post.prev || post.next){ %>
-      <nav id="article-nav">
-        <% if (post.prev){ %>
-          <a href="<%- url_for(post.prev.path) %>" id="article-nav-newer" class="article-nav-link-wrap">
-            <strong class="article-nav-caption"><%= __('newer') %></strong>
-            <div class="article-nav-title">
-              <% if (post.prev.title){ %>
-                <%= post.prev.title %>
-              <% } else { %>
-                (no title)
-              <% } %>
-            </div>
-          </a>
-        <% } %>
-        <% if (post.next){ %>
-          <a href="<%- url_for(post.next.path) %>" id="article-nav-older" class="article-nav-link-wrap">
-            <strong class="article-nav-caption"><%= __('older') %></strong>
-            <div class="article-nav-title"><%= post.next.title %></div>
-          </a>
-        <% } %>
-      </nav>
-      <% } %>
+  <% if (post.prev || post.next) { %>
+  <div id="article-nav">
+    <% if (post.prev){ %>
+    <a href="<%- url_for(post.prev.path) %>" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><%= __('newer') %></strong>
+      <div class="article-nav-title"><%= post.prev.title %></div>
+    </a>
+    <% } %>
+    <% if (post.next){ %>
+    <a href="<%- url_for(post.next.path) %>" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption"><%= __('older') %></strong>
+      <div class="article-nav-title"><%= post.next.title %></div>
+    </a>
+    <% } %>
+  </div>
+  <% } %>
   <% } %>
 </article>
 
-<% if (!index && post.comments && theme.config.disqus.shortname){ %>
-<section id="comments">
-  <div id="disqus_thread">
-    <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-  </div>
-</section>
+<!-- disqus -->
+<% if (theme.config.disqus.shortname && is_post()) { %>
+<div id="disqus_thread">
+  <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+<script>
+  function loadDisqus() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://<%= theme.config.disqus.shortname %>.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    window.disqus_config = function () {
+      this.page.url = '<%= page.permalink %>';
+    };
+  }
+  var runningOnBrowser = typeof window !== "undefined";
+  var isBot = runningOnBrowser && !("onscroll" in window) || typeof navigator !== "undefined" && /(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent);
+  var supportsIntersectionObserver = runningOnBrowser && "IntersectionObserver" in window;
+  setTimeout(function () {
+    if (!isBot && supportsIntersectionObserver) {
+      var disqus_observer = new IntersectionObserver(function (entries) {
+        if (entries[0].isIntersecting) {
+          loadDisqus();
+          disqus_observer.disconnect();
+        }
+      }, { threshold: [0] });
+      disqus_observer.observe(document.getElementById('disqus_thread'));
+    } else {
+      loadDisqus();
+    }
+  }, 1);
+</script>
+<% if (theme.config.disqus.count) { %>
+<script id="dsq-count-scr" src="https://<%= theme.config.disqus.shortname %>.disqus.com/count.js" async></script>
+<% } %>
 <% } %>

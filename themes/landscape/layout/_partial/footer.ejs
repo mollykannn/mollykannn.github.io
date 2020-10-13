@@ -1,11 +1,7 @@
 <footer id="footer">
-  <% if (theme.sidebar === 'bottom'){ %>
-  <%- partial('_partial/sidebar') %>
-  <% } %>
   <div class="container">
-    &copy; <%= date(new Date(), 'YYYY') %> <%= __('powered_by') %> <a href="http://hexo.io/"
-      target="_blank">Hexo</a><br />
-    Theme: <a href="https://github.com/hexojs/hexo-theme-landscape">landscape</a>, <%= __('edited_by') %> <a
-      href="<%= config.github %>" target="_blank"><%= config.author || config.title %></a>
+    &copy; <%= date(new Date(), 'YYYY') %> powered by <a href="http://hexo.io/" target="_blank">Hexo</a><br />
+    Theme: <a href="https://github.com/hexojs/hexo-theme-landscape">landscape</a>, edited by <a
+      href="<%= theme.introduction.github %>" target="_blank"><%= config.author || config.title %></a>
   </div>
 </footer>
