@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>風の迷路。</title>
+  
+  
+  <link href="https://mollykannn.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://mollykannn.github.io/"/>
+  <updated>2020-10-10T14:25:16.192Z</updated>
+  <id>https://mollykannn.github.io/</id>
+  
+  <author>
+    <name>Molly Kan</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>下載Web API返回的Binary格式檔案</title>
+    <link href="https://mollykannn.github.io/post/download-web-api-binary-file/"/>
+    <id>https://mollykannn.github.io/post/download-web-api-binary-file/</id>
+    <published>2020-09-23T11:55:16.000Z</published>
+    <updated>2020-10-10T14:25:16.192Z</updated>
+    
+    
+    <summary type="html">&lt;img src=&quot;/post/download-web-api-binary-file/banner/2020-09-23-download-web-api-binary-file.jpg&quot; class=&quot;banner&quot;&gt;
+
+&lt;p&gt;碰到舊project要下載API返回的xlsx檔案﹐API返回的全都是Binary格式。一般來說利用axios 加上 responseType: “arraybuffer”就下載到了。但很可惜的是，舊project還是在用Yii + jQuery….&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Javascript" scheme="https://mollykannn.github.io/categories/Javascript/"/>
+    
+    
+    <category term="Javascript" scheme="https://mollykannn.github.io/tags/Javascript/"/>
+    
+    <category term="Binary file" scheme="https://mollykannn.github.io/tags/Binary-file/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hexo筆記</title>
+    <link href="https://mollykannn.github.io/post/start-to-use-hexo/"/>
+    <id>https://mollykannn.github.io/post/start-to-use-hexo/</id>
+    <published>2020-09-01T12:20:00.000Z</published>
+    <updated>2020-10-10T14:25:14.291Z</updated>
+    
+    
+    <summary type="html">&lt;img src=&quot;/post/start-to-use-hexo/banner/2020-09-01-start-to-use-hexo.jpg&quot; class=&quot;banner&quot;&gt;
+
+&lt;p&gt;不知不覺Hexo已經去到了5.0了，先寫一篇紀錄。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Blog" scheme="https://mollykannn.github.io/categories/Blog/"/>
+    
+    
+    <category term="Hexo" scheme="https://mollykannn.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>VScode插件 - PostCSS Sorting</title>
+    <link href="https://mollykannn.github.io/post/vscode-css-sorting/"/>
+    <id>https://mollykannn.github.io/post/vscode-css-sorting/</id>
+    <published>2019-03-18T12:18:53.000Z</published>
+    <updated>2020-10-10T14:25:11.958Z</updated>
+    
+    
+    <summary type="html">&lt;img src=&quot;/post/vscode-css-sorting/banner/2019-03-18-vscode-css-sorting.jpg&quot; class=&quot;banner&quot;&gt;
+
+&lt;p&gt;Reference: &lt;a href=&quot;https://blog.othree.net/log/2019/02/24/css-properties-sorting-order/&quot;&gt;https://blog.othree.net/log/2019/02/24/css-properties-sorting-order/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;事源看到上面Reference那篇，所以決定調整(增加?)一下VScode裡的css sorting order。看了看SMACSS好像比較多人使用的樣子，所以就用SMACSS吧。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Editor" scheme="https://mollykannn.github.io/categories/Editor/"/>
+    
+    
+    <category term="CSS" scheme="https://mollykannn.github.io/tags/CSS/"/>
+    
+    <category term="VScode" scheme="https://mollykannn.github.io/tags/VScode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>字型散步：日常生活的中文字型學</title>
+    <link href="https://mollykannn.github.io/post/Font-Book/"/>
+    <id>https://mollykannn.github.io/post/Font-Book/</id>
+    <published>2019-02-13T12:37:20.000Z</published>
+    <updated>2020-10-10T14:25:09.769Z</updated>
+    
+    
+    <summary type="html">&lt;img src=&quot;/post/Font-Book/banner/2019-02-13-Font-Book.jpeg&quot; class=&quot;banner&quot;&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.books.com.tw/products/0010654376&quot;&gt;字型散步：日常生活的中文字型學&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;輕鬆觀看的書本，做回一些筆記。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Book" scheme="https://mollykannn.github.io/categories/Book/"/>
+    
+    
+    <category term="Font" scheme="https://mollykannn.github.io/tags/Font/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>HTML &amp; CSS 網站設計建置優化之道</title>
+    <link href="https://mollykannn.github.io/post/HTML-and-CSS-Design-and-Build-Websites/"/>
+    <id>https://mollykannn.github.io/post/HTML-and-CSS-Design-and-Build-Websites/</id>
+    <published>2019-01-14T12:09:21.000Z</published>
+    <updated>2020-10-10T14:25:07.160Z</updated>
+    
+    
+    <summary type="html">&lt;img src=&quot;/post/HTML-and-CSS-Design-and-Build-Websites/banner/2019-01-14-HTML-and-CSS-Design-and-Build-Websites.jpg&quot; class=&quot;banner&quot;&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.books.com.tw/products/0010546014&quot;&gt;HTML&amp;amp;CSS：網站設計建置優化之道&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;入門Web必看的書之一﹐清楚介紹了HTML跟CSS基本會用的語法。這邊節錄了一些經常忘記的語法….&lt;/p&gt;
+&lt;p&gt;這系列還有另一本介紹Javascript跟jQuery (雖然現在jQuery都在死亡邊緣)﹐我自己還沒有看過﹐有空拿來看看吧….&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Book" scheme="https://mollykannn.github.io/categories/Book/"/>
+    
+    
+    <category term="CSS" scheme="https://mollykannn.github.io/tags/CSS/"/>
+    
+    <category term="HTML" scheme="https://mollykannn.github.io/tags/HTML/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Share/Like Button集合</title>
+    <link href="https://mollykannn.github.io/post/social-media-share-like-button/"/>
+    <id>https://mollykannn.github.io/post/social-media-share-like-button/</id>
+    <published>2018-12-15T16:00:00.000Z</published>
+    <updated>2020-10-10T14:25:04.991Z</updated>
+    
+    
+    <summary type="html">&lt;img src=&quot;/post/social-media-share-like-button/banner/2018-12-16-social-media-share-like-button.png&quot; class=&quot;banner&quot;&gt;
+
+&lt;p&gt;社交網站上的Share/Like Button集合。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Front-End" scheme="https://mollykannn.github.io/categories/Front-End/"/>
+    
+    
+    <category term="Share Button" scheme="https://mollykannn.github.io/tags/Share-Button/"/>
+    
+    <category term="Like Button" scheme="https://mollykannn.github.io/tags/Like-Button/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MACOS - Shadowsocks使用方法</title>
+    <link href="https://mollykannn.github.io/post/shadowsocks/"/>
+    <id>https://mollykannn.github.io/post/shadowsocks/</id>
+    <published>2018-09-16T16:00:00.000Z</published>
+    <updated>2019-02-12T12:33:52.728Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;翻牆程式，從Evernote上拿回紀錄。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="MACOS" scheme="https://mollykannn.github.io/categories/MACOS/"/>
+    
+    
+    <category term="Software" scheme="https://mollykannn.github.io/tags/Software/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Yii2學習筆記 (1)</title>
+    <link href="https://mollykannn.github.io/post/start-to-use-yii2-1/"/>
+    <id>https://mollykannn.github.io/post/start-to-use-yii2-1/</id>
+    <published>2018-09-15T16:00:00.000Z</published>
+    <updated>2019-02-12T12:33:52.728Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;從Evernote上拿回一些筆記….&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Back-End" scheme="https://mollykannn.github.io/categories/Back-End/"/>
+    
+    
+    <category term="Yii" scheme="https://mollykannn.github.io/tags/Yii/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Atom Plugin</title>
+    <link href="https://mollykannn.github.io/post/atom-plugin/"/>
+    <id>https://mollykannn.github.io/post/atom-plugin/</id>
+    <published>2018-04-28T16:00:00.000Z</published>
+    <updated>2019-02-12T12:33:52.728Z</updated>
+    
+    
+    <summary type="html">&lt;p&gt;轉VS code前記錄一下自己在Atom正在使用的Plugin….&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Editor" scheme="https://mollykannn.github.io/categories/Editor/"/>
+    
+    
+    <category term="Atom" scheme="https://mollykannn.github.io/tags/Atom/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>MacOS Sierra 基本設定</title>
+    <link href="https://mollykannn.github.io/post/mac-os-setting/"/>
+    <id>https://mollykannn.github.io/post/mac-os-setting/</id>
+    <published>2017-07-15T16:00:00.000Z</published>
+    <updated>2020-10-03T09:57:36.898Z</updated>
+    
+    
+    <summary type="html">&lt;img src=&quot;/post/mac-os-setting/banner/2017-07-16-mac-os-setting.png&quot; class=&quot;&quot; title=&quot;banner&quot;&gt;
+
+&lt;p&gt;是的，最近轉了新公司，用的是Macbook Pro…雖然自己本來就有一部Macbook Pro，可是都沒有怎樣用來Coding (汗)，於是設定就成為了一大難關 (?)。&lt;/p&gt;
+&lt;p&gt;於是記錄一下一些基本設定吧…&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="MACOS" scheme="https://mollykannn.github.io/categories/MACOS/"/>
+    
+    
+    <category term="Basic Setting" scheme="https://mollykannn.github.io/tags/Basic-Setting/"/>
+    
+  </entry>
+  
+</feed>
