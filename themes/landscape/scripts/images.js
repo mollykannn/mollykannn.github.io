@@ -15,7 +15,7 @@ hexo.extend.filter.register("after_render:html", function (htmlContent) {
               /.([^/]*)$/,
               `/medium_$1`
             )}" />
-            <img class="lazy banner" src="/images/preload.jpg" data-src="${p2.replace(
+            <img class="lazy banner" src="/images/preload.jpg" alt="banner" data-src="${p2.replace(
               /.([^/]*)$/,
               `/small_$1`
             )}">

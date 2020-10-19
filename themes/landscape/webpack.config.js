@@ -4,13 +4,12 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
   entry: {
-    'script': "./src/js/script.js",
-    'local-search': "./src/js/local-search.js",
-    'style': "./src/css/style.scss",
+    main: ["./src/js/script.js", "./src/css/style.scss"],
+    "local-search": "./src/js/local-search.js",
   },
   output: {
-    filename: "js/[name].js",
     path: path.join(__dirname, "source"),
+    filename: "js/[name].js",
   },
   module: {
     rules: [

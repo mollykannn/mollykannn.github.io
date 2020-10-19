@@ -143,6 +143,7 @@
   flex-wrap: wrap;
   & .category-list-item {
     flex: 0 0 50%;
+    margin-bottom: 7px;
     & .category-list-count {
       padding-left: 3px;
       color: $color-grey;

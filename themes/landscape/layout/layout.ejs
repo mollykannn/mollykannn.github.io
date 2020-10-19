@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="<%= config.language %>">
 
 <head>
   <meta charset="utf-8">
@@ -40,7 +40,7 @@
     <link href="<%= theme.head.favicon.small %>" rel="icon" type="image/png" sizes="16x16">
   <% } %>
   <!-- theme css -->
-  <%- css({ href: 'css/style.css' }) %>
+  <%- css({ href: 'css/main.css' }) %>
   <%- css({ href: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/tomorrow-night.min.css', media: 'print', onload: "this.media='all'" }) %>
   <%- open_graph({twitter_id: theme.head.twitter}) %>
   <!-- site-verification -->
@@ -59,6 +59,7 @@
   <% if (theme.head.open_search) { %>
     <link href="/opensearch.xml" rel="search" type="application/opensearchdescription+xml" title="<%= config.title %>">
   <% } %>
+  <link rel="manifest" href="manifest.json">
 </head>
 
 <body>
@@ -70,7 +71,7 @@
     </div>
     <%- partial('_partial/footer', null, {cache: !config.relative_link}) %>
   </div>
-  <%- js({ src: 'js/script', async: true }) %>
+  <%- js({ src: 'js/main', async: true }) %>
   <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.1.2/dist/lazyload.min.js"></script>
   <script>
     var lazyLoadInstance = new LazyLoad();
