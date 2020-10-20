@@ -7,7 +7,7 @@ tags:
   - Hexo
 ---
 
-{% asset_img banner banner/2020-09-01-start-to-use-hexo.jpg %}
+{% asset_img banner banner/banner.jpeg %}
 
 不知不覺Hexo已經去到了5.0了，先寫一篇紀錄。
 

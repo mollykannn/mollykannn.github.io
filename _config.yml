@@ -128,7 +128,7 @@ asset_pipeline:
 imagemin:
   interlaced: false
   multipass: false
-  optimizationLevel: 2
+  optimizationLevel: 5
   pngquant: true
   progressive: false
 
