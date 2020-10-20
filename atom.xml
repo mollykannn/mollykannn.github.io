@@ -6,7 +6,7 @@
   <link href="https://mollykannn.github.io/atom.xml" rel="self"/>
   
   <link href="https://mollykannn.github.io/"/>
-  <updated>2020-10-19T14:54:24.200Z</updated>
+  <updated>2020-10-20T13:53:53.118Z</updated>
   <id>https://mollykannn.github.io/</id>
   
   <author>
@@ -17,11 +17,42 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Yarn小知識</title>
+    <link href="https://mollykannn.github.io/post/yarn-introduction/"/>
+    <id>https://mollykannn.github.io/post/yarn-introduction/</id>
+    <published>2020-10-20T12:33:10.000Z</published>
+    <updated>2020-10-20T13:53:53.118Z</updated>
+    
+    
+    <summary type="html">&lt;img src=&quot;/post/yarn-introduction/banner/banner.jpeg&quot; class=&quot;banner&quot;&gt;
+
+&lt;h4 id=&quot;Npm-vs-Yarn&quot;&gt;&lt;a href=&quot;#Npm-vs-Yarn&quot; class=&quot;headerlink&quot; title=&quot;Npm vs Yarn&quot;&gt;&lt;/a&gt;Npm vs Yarn&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;兩者也是Javascript package managers&lt;/li&gt;
+&lt;li&gt;現在大家的速度都差不多（個人覺得yarn有cache會快一點點啦)&lt;/li&gt;
+&lt;li&gt;兩者現在也有lock file（npm本來沒有lock file的﹐後來才有的。）&lt;/li&gt;
+&lt;li&gt;lock file的用途是紀錄所有安裝package的dependency的版本資料，以便日後重新安裝相同的dependency，避免發生錯誤。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+
+&lt;h4 id=&quot;如何由npm轉到yarn&quot;&gt;&lt;a href=&quot;#如何由npm轉到yarn&quot; class=&quot;headerlink&quot; title=&quot;如何由npm轉到yarn?&quot;&gt;&lt;/a&gt;如何由npm轉到yarn?&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;刪掉lock file﹐然後yarn install&lt;/li&gt;
+&lt;/ul&gt;</summary>
+    
+    
+    
+    <category term="Javascript" scheme="https://mollykannn.github.io/categories/Javascript/"/>
+    
+    
+    <category term="yarn" scheme="https://mollykannn.github.io/tags/yarn/"/>
+    
+  </entry>
+  
+  <entry>
     <title>下載Web API返回的Binary格式檔案</title>
     <link href="https://mollykannn.github.io/post/download-web-api-binary-file/"/>
     <id>https://mollykannn.github.io/post/download-web-api-binary-file/</id>
     <published>2020-09-23T11:55:16.000Z</published>
-    <updated>2020-10-19T14:54:24.200Z</updated>
+    <updated>2020-10-20T13:53:53.118Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/download-web-api-binary-file/banner/2020-09-23-download-web-api-binary-file.jpg&quot; class=&quot;banner&quot;&gt;
@@ -44,10 +75,10 @@
     <link href="https://mollykannn.github.io/post/start-to-use-hexo/"/>
     <id>https://mollykannn.github.io/post/start-to-use-hexo/</id>
     <published>2020-09-01T12:20:00.000Z</published>
-    <updated>2020-10-19T14:54:24.200Z</updated>
+    <updated>2020-10-20T13:53:53.118Z</updated>
     
     
-    <summary type="html">&lt;img src=&quot;/post/start-to-use-hexo/banner/2020-09-01-start-to-use-hexo.jpg&quot; class=&quot;banner&quot;&gt;
+    <summary type="html">&lt;img src=&quot;/post/start-to-use-hexo/banner/banner.jpeg&quot; class=&quot;banner&quot;&gt;
 
 &lt;p&gt;不知不覺Hexo已經去到了5.0了，先寫一篇紀錄。&lt;/p&gt;</summary>
     
@@ -65,7 +96,7 @@
     <link href="https://mollykannn.github.io/post/vscode-css-sorting/"/>
     <id>https://mollykannn.github.io/post/vscode-css-sorting/</id>
     <published>2019-03-18T12:18:53.000Z</published>
-    <updated>2020-10-19T14:54:24.200Z</updated>
+    <updated>2020-10-20T13:53:53.118Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/vscode-css-sorting/banner/2019-03-18-vscode-css-sorting.jpg&quot; class=&quot;banner&quot;&gt;
@@ -89,7 +120,7 @@
     <link href="https://mollykannn.github.io/post/Font-Book/"/>
     <id>https://mollykannn.github.io/post/Font-Book/</id>
     <published>2019-02-13T12:37:20.000Z</published>
-    <updated>2020-10-19T14:54:24.200Z</updated>
+    <updated>2020-10-20T13:53:53.118Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/Font-Book/banner/2019-02-13-Font-Book.jpeg&quot; class=&quot;banner&quot;&gt;
@@ -111,7 +142,7 @@
     <link href="https://mollykannn.github.io/post/HTML-and-CSS-Design-and-Build-Websites/"/>
     <id>https://mollykannn.github.io/post/HTML-and-CSS-Design-and-Build-Websites/</id>
     <published>2019-01-14T12:09:21.000Z</published>
-    <updated>2020-10-19T14:54:24.196Z</updated>
+    <updated>2020-10-20T13:53:53.118Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/HTML-and-CSS-Design-and-Build-Websites/banner/2019-01-14-HTML-and-CSS-Design-and-Build-Websites.jpg&quot; class=&quot;banner&quot;&gt;
@@ -136,7 +167,7 @@
     <link href="https://mollykannn.github.io/post/social-media-share-like-button/"/>
     <id>https://mollykannn.github.io/post/social-media-share-like-button/</id>
     <published>2018-12-15T16:00:00.000Z</published>
-    <updated>2020-10-19T14:54:24.196Z</updated>
+    <updated>2020-10-20T13:53:53.114Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/social-media-share-like-button/banner/2018-12-16-social-media-share-like-button.png&quot; class=&quot;banner&quot;&gt;
@@ -159,7 +190,7 @@
     <link href="https://mollykannn.github.io/post/shadowsocks/"/>
     <id>https://mollykannn.github.io/post/shadowsocks/</id>
     <published>2018-09-16T16:00:00.000Z</published>
-    <updated>2020-10-19T14:54:24.196Z</updated>
+    <updated>2020-10-20T13:53:53.114Z</updated>
     
     
     <summary type="html">&lt;p&gt;翻牆程式，從Evernote上拿回紀錄。&lt;/p&gt;</summary>
@@ -178,7 +209,7 @@
     <link href="https://mollykannn.github.io/post/start-to-use-yii2-1/"/>
     <id>https://mollykannn.github.io/post/start-to-use-yii2-1/</id>
     <published>2018-09-15T16:00:00.000Z</published>
-    <updated>2020-10-19T14:54:24.196Z</updated>
+    <updated>2020-10-20T13:53:53.114Z</updated>
     
     
     <summary type="html">&lt;p&gt;從Evernote上拿回一些筆記….&lt;/p&gt;</summary>
@@ -197,7 +228,7 @@
     <link href="https://mollykannn.github.io/post/atom-plugin/"/>
     <id>https://mollykannn.github.io/post/atom-plugin/</id>
     <published>2018-04-28T16:00:00.000Z</published>
-    <updated>2020-10-19T14:54:24.196Z</updated>
+    <updated>2020-10-20T13:53:53.114Z</updated>
     
     
     <summary type="html">&lt;p&gt;轉VS code前記錄一下自己在Atom正在使用的Plugin….&lt;/p&gt;</summary>
@@ -208,28 +239,6 @@
     
     
     <category term="Atom" scheme="https://mollykannn.github.io/tags/Atom/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MacOS Sierra 基本設定</title>
-    <link href="https://mollykannn.github.io/post/mac-os-setting/"/>
-    <id>https://mollykannn.github.io/post/mac-os-setting/</id>
-    <published>2017-07-15T16:00:00.000Z</published>
-    <updated>2020-10-19T14:54:24.196Z</updated>
-    
-    
-    <summary type="html">&lt;img src=&quot;/post/mac-os-setting/banner/2017-07-16-mac-os-setting.png&quot; class=&quot;&quot; title=&quot;banner&quot;&gt;
-
-&lt;p&gt;是的，最近轉了新公司，用的是Macbook Pro…雖然自己本來就有一部Macbook Pro，可是都沒有怎樣用來Coding (汗)，於是設定就成為了一大難關 (?)。&lt;/p&gt;
-&lt;p&gt;於是記錄一下一些基本設定吧…&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="MACOS" scheme="https://mollykannn.github.io/categories/MACOS/"/>
-    
-    
-    <category term="Basic Setting" scheme="https://mollykannn.github.io/tags/Basic-Setting/"/>
     
   </entry>
   
