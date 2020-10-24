@@ -9,6 +9,7 @@
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "babel-loader": "^8.1.0",
+    "copy-webpack-plugin": "^6.2.1",
     "css-loader": "^4.3.0",
     "ejs-lint": "^1.1.0",
     "eslint": "^7.10.0",

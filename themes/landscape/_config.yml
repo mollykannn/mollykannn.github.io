@@ -1,3 +1,5 @@
+htmlLanguage: zh-Hant
+
 head:
   #https://favicon.io/favicon-converter/
   favicon:
@@ -11,6 +13,7 @@ head:
   theme_color: "#03a9f4"
   twitter: https://twitter.com/Mollykannn
   open_search: true
+  manifest: true
 
 config:
   disqus:

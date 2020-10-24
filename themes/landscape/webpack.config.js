@@ -1,6 +1,7 @@
 const path = require("path");
 const StylelintPlugin = require("stylelint-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const CopyPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: {
@@ -54,6 +55,13 @@ module.exports = {
     ],
   },
   plugins: [
+    new CopyPlugin({
+      patterns: [{ from: "src/manifest.json", to: "." },
+      { from: "src/images/favicon", to: "images/favicon" },
+      { from: "src/images/icon.jpg", to: "images" },
+      { from: "src/images/preload.jpg", to: "images" }
+      ],
+    }),
     new StylelintPlugin({
       configFile: "stylelint.config.js",
       fix: true,

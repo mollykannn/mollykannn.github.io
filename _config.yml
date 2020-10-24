@@ -8,7 +8,7 @@ subtitle:
 description: 毛利，香港人眼中嘅廢青。Analyst Programmer。防止自己失憶﹐記錄各樣IT問題。
 keywords:
 author: Molly Kan
-language: zh-Hant
+language: zh-hk
 timezone: Asia/Hong_Kong
 
 # URL
@@ -46,7 +46,7 @@ relative_link: false
 future: true
 highlight:
   enable: true
-  line_number: true
+  line_number: false
   auto_detect: false
   tab_replace: ''
   wrap: true
