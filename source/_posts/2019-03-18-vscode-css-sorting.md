@@ -18,15 +18,16 @@ Reference: [https://blog.othree.net/log/2019/02/24/css-properties-sorting-order/
 
 VScode可以使用 [VS Code PostCSS Sorting](https://github.com/mrmlnc/vscode-postcss-sorting) 這個plugin幫助一下，但需要在VScode => perference => settings 裡修改setting.json才可以使用。以下是我的config:
 
-    "postcssSorting.config": {
-    "order": [
+```jsx
+"postcssSorting.config": {
+  "order": [
     "custom-properties",
     "dollar-variables",
     "declarations",
     "at-rules",
     "rules"
-    ],
-    "properties-order": [
+  ],
+  "properties-order": [
     "box-sizing",
     "display",
     "visibility",
@@ -320,8 +321,9 @@ VScode可以使用 [VS Code PostCSS Sorting](https://github.com/mrmlnc/vscode-po
     "user-select",
     "widows",
     "writing-mode"
-    ]
-    }
+  ]
+}
+```
 
 *(P.S: properties-order裡面的排序是參照了 [css-declaration-sorter](https://github.com/Siilwyn/css-declaration-sorter/blob/master/orders/smacss.json) 這篇)*
 

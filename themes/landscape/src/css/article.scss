@@ -226,6 +226,11 @@
   font-family: Consolas,Monaco,Menlo,monospace;
 }
 
+.article-entry pre {
+  background: #1d1f21;
+  color: #ccc;
+}
+
 .article-entry .highlight {
   padding: 5px 10px;
   overflow: auto;
