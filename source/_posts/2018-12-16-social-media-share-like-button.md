@@ -65,7 +65,7 @@ Line
 https://about.twitter.com/resources/buttons#tweet)
 
 
-是咁的﹐其實仲有[Share Button Auto Generator](https://simplesharingbuttons.com/#preview)可以作為懶人參考。
+是咁的，其實仲有[Share Button Auto Generator](https://simplesharingbuttons.com/#preview)可以作為懶人參考。
 
 ------------------------------------
 參考網址:

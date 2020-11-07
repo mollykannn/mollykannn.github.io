@@ -8,11 +8,11 @@ photos:
 
 {% asset_img banner banner/banner.jpeg %}
 
-有用git的人們應該都會對ssh key有一定程度認識吧。如果要在同一部電腦使用不同的ssh key，除了使用手動轉換外，還可以在.ssh folder裡加上config file來自動識別不同的host使用不同的ssh key。
+有用git的話應該都會對ssh key有一定程度認識吧。如果要在同一部電腦使用不同的ssh key，除了使用手動轉換外，還可以在.ssh folder裡加上config file來自動識別不同的host使用不同的ssh key。
 
 <!-- more -->
 
-現在這邊有兩條ssh key,，分別是id_rsa_personal跟id_rsa_work，.ssh folder檔案如下：
+現在這邊有兩條ssh key，分別是id_rsa_personal跟id_rsa_work，.ssh folder檔案如下：
 
 ```bash
 id_rsa_personal
@@ -31,7 +31,7 @@ ssh-add -D
 ssh-add ~/.ssh/id_rsa_work
 ```
 
-如果想根據host來識別使用不同ssh key的話﹐就要加上config file
+如果想根據host來識別使用不同ssh key的話，就要加上config file
 
 ```bash
 vim ~/.ssh/config
@@ -58,7 +58,7 @@ Host *
 ```bash
 Host github-personal
     HostName github.com
- ******   IdentityFile ~/.ssh/id_rsa_personal
+    IdentityFile ~/.ssh/id_rsa_personal
 
 Host github-work
     HostName github.com
@@ -82,7 +82,7 @@ vim ~/.gitconfig
 
 ---
 
-如果想使用不同的ssh key時都用上不同git config中的username跟email的話﹐抱歉這不太能做到 🤪。這跟git config讀取順序有關，git config讀取順序如下：
+如果想使用不同的ssh key時都用上不同git config中的username跟email的話，抱歉這不太能做到 🤪。這跟git config讀取順序有關，git config讀取順序如下：
 
 1. local repo裡的.git/config
 2. global (~/.gitconfig)

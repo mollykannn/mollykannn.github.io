@@ -14,14 +14,14 @@ photos:
 
 - 兩者也是Javascript package managers
 - 現在大家的速度都差不多（個人覺得yarn有cache會快一點點啦)
-- 兩者現在也有lock file（npm本來沒有lock file的﹐後來才有的。）
+- 兩者現在也有lock file（npm本來沒有lock file的，後來才有的。）
 - lock file的用途是紀錄所有安裝package的dependency的版本資料，以便日後重新安裝相同的dependency，避免發生錯誤。
 
 <br>
 
 #### 如何由npm轉到yarn?
 
-- 刪掉lock file﹐然後yarn install
+- 刪掉lock file，然後yarn install
 
 <!-- more -->
 

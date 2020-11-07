@@ -64,4 +64,4 @@ date: 2018-09-17 00:00:00
 > Google Chrome => SwitchyOmega => 設定Sock5
 
 ------------------------------------
-是咁的﹐其實有GUI版嘅Shadowsocks可以用﹐叫[Shadowsocks X](https://www.sednax.com/download.php)。其實唔洗裝得咁辛苦（逃
+是咁的，其實有GUI版嘅Shadowsocks可以用，叫[Shadowsocks X](https://www.sednax.com/download.php)。其實唔洗裝得咁辛苦（逃
