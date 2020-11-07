@@ -6,7 +6,7 @@
   <link href="https://mollykannn.github.io/atom.xml" rel="self"/>
   
   <link href="https://mollykannn.github.io/"/>
-  <updated>2020-11-04T13:07:15.187Z</updated>
+  <updated>2020-11-07T12:47:28.967Z</updated>
   <id>https://mollykannn.github.io/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="https://mollykannn.github.io/post/ssh-key-login/"/>
     <id>https://mollykannn.github.io/post/ssh-key-login/</id>
     <published>2020-11-04T12:41:19.000Z</published>
-    <updated>2020-11-04T13:07:15.187Z</updated>
+    <updated>2020-11-07T12:47:28.967Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/ssh-key-login/banner/banner.jpeg&quot; class=&quot;banner&quot;&gt;
 
-&lt;p&gt;有用git的人們應該都會對ssh key有一定程度認識吧。如果要在同一部電腦使用不同的ssh key，除了使用手動轉換外，還可以在.ssh folder裡加上config file來自動識別不同的host使用不同的ssh key。&lt;/p&gt;</summary>
+&lt;p&gt;有用git的話應該都會對ssh key有一定程度認識吧。如果要在同一部電腦使用不同的ssh key，除了使用手動轉換外，還可以在.ssh folder裡加上config file來自動識別不同的host使用不同的ssh key。&lt;/p&gt;</summary>
     
     
     
@@ -42,7 +42,7 @@
     <link href="https://mollykannn.github.io/post/yarn-introduction/"/>
     <id>https://mollykannn.github.io/post/yarn-introduction/</id>
     <published>2020-10-20T12:33:10.000Z</published>
-    <updated>2020-11-04T13:07:15.187Z</updated>
+    <updated>2020-11-07T12:47:28.967Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/yarn-introduction/banner/banner.jpeg&quot; class=&quot;banner&quot;&gt;
@@ -50,13 +50,13 @@
 &lt;h4 id=&quot;Npm-vs-Yarn&quot;&gt;&lt;a href=&quot;#Npm-vs-Yarn&quot; class=&quot;headerlink&quot; title=&quot;Npm vs Yarn&quot;&gt;&lt;/a&gt;Npm vs Yarn&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;兩者也是Javascript package managers&lt;/li&gt;
 &lt;li&gt;現在大家的速度都差不多（個人覺得yarn有cache會快一點點啦)&lt;/li&gt;
-&lt;li&gt;兩者現在也有lock file（npm本來沒有lock file的﹐後來才有的。）&lt;/li&gt;
+&lt;li&gt;兩者現在也有lock file（npm本來沒有lock file的，後來才有的。）&lt;/li&gt;
 &lt;li&gt;lock file的用途是紀錄所有安裝package的dependency的版本資料，以便日後重新安裝相同的dependency，避免發生錯誤。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
 
 &lt;h4 id=&quot;如何由npm轉到yarn&quot;&gt;&lt;a href=&quot;#如何由npm轉到yarn&quot; class=&quot;headerlink&quot; title=&quot;如何由npm轉到yarn?&quot;&gt;&lt;/a&gt;如何由npm轉到yarn?&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;刪掉lock file﹐然後yarn install&lt;/li&gt;
+&lt;li&gt;刪掉lock file，然後yarn install&lt;/li&gt;
 &lt;/ul&gt;</summary>
     
     
@@ -73,12 +73,12 @@
     <link href="https://mollykannn.github.io/post/download-web-api-binary-file/"/>
     <id>https://mollykannn.github.io/post/download-web-api-binary-file/</id>
     <published>2020-09-23T11:55:16.000Z</published>
-    <updated>2020-11-04T13:07:15.183Z</updated>
+    <updated>2020-11-07T12:47:28.967Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/download-web-api-binary-file/banner/banner.jpeg&quot; class=&quot;banner&quot;&gt;
 
-&lt;p&gt;碰到舊project要下載API返回的xlsx檔案﹐API返回的全都是Binary格式。一般來說利用axios 加上 responseType: “arraybuffer”就下載到了。但很可惜的是，舊project還是在用Yii + jQuery….&lt;/p&gt;</summary>
+&lt;p&gt;碰到舊project要下載API返回的xlsx檔案，API返回的全都是Binary格式。一般來說利用axios 加上 responseType: “arraybuffer”就下載到了。但很可惜的是，舊project還是在用Yii + jQuery….&lt;/p&gt;</summary>
     
     
     
@@ -96,7 +96,7 @@
     <link href="https://mollykannn.github.io/post/start-to-use-hexo/"/>
     <id>https://mollykannn.github.io/post/start-to-use-hexo/</id>
     <published>2020-09-01T12:20:00.000Z</published>
-    <updated>2020-11-04T13:07:15.183Z</updated>
+    <updated>2020-11-07T12:47:28.963Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/start-to-use-hexo/banner/banner.jpeg&quot; class=&quot;banner&quot;&gt;
@@ -117,7 +117,7 @@
     <link href="https://mollykannn.github.io/post/vscode-css-sorting/"/>
     <id>https://mollykannn.github.io/post/vscode-css-sorting/</id>
     <published>2019-03-18T12:18:53.000Z</published>
-    <updated>2020-11-04T13:07:15.183Z</updated>
+    <updated>2020-11-07T12:47:28.963Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/vscode-css-sorting/banner/banner.jpeg&quot; class=&quot;banner&quot;&gt;
@@ -141,7 +141,7 @@
     <link href="https://mollykannn.github.io/post/Font-Book/"/>
     <id>https://mollykannn.github.io/post/Font-Book/</id>
     <published>2019-02-13T12:37:20.000Z</published>
-    <updated>2020-11-04T13:07:15.183Z</updated>
+    <updated>2020-11-07T12:47:28.963Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/Font-Book/banner/2019-02-13-Font-Book.jpeg&quot; class=&quot;banner&quot;&gt;
@@ -163,14 +163,14 @@
     <link href="https://mollykannn.github.io/post/HTML-and-CSS-Design-and-Build-Websites/"/>
     <id>https://mollykannn.github.io/post/HTML-and-CSS-Design-and-Build-Websites/</id>
     <published>2019-01-14T12:09:21.000Z</published>
-    <updated>2020-11-04T13:07:15.183Z</updated>
+    <updated>2020-11-07T12:47:28.963Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/HTML-and-CSS-Design-and-Build-Websites/banner/2019-01-14-HTML-and-CSS-Design-and-Build-Websites.jpg&quot; class=&quot;banner&quot;&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.books.com.tw/products/0010546014&quot;&gt;HTML&amp;amp;CSS：網站設計建置優化之道&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;入門Web必看的書之一﹐清楚介紹了HTML跟CSS基本會用的語法。這邊節錄了一些經常忘記的語法….&lt;/p&gt;
-&lt;p&gt;這系列還有另一本介紹Javascript跟jQuery (雖然現在jQuery都在死亡邊緣)﹐我自己還沒有看過﹐有空拿來看看吧….&lt;/p&gt;</summary>
+&lt;p&gt;入門Web必看的書之一，清楚介紹了HTML跟CSS基本會用的語法。這邊節錄了一些經常忘記的語法….&lt;/p&gt;
+&lt;p&gt;這系列還有另一本介紹Javascript跟jQuery (雖然現在jQuery都在死亡邊緣)，我自己還沒有看過，有空拿來看看吧….&lt;/p&gt;</summary>
     
     
     
@@ -188,7 +188,7 @@
     <link href="https://mollykannn.github.io/post/social-media-share-like-button/"/>
     <id>https://mollykannn.github.io/post/social-media-share-like-button/</id>
     <published>2018-12-15T16:00:00.000Z</published>
-    <updated>2020-11-04T13:07:15.179Z</updated>
+    <updated>2020-11-07T12:47:28.963Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/social-media-share-like-button/banner/2018-12-16-social-media-share-like-button.png&quot; class=&quot;banner&quot;&gt;
@@ -211,7 +211,7 @@
     <link href="https://mollykannn.github.io/post/shadowsocks/"/>
     <id>https://mollykannn.github.io/post/shadowsocks/</id>
     <published>2018-09-16T16:00:00.000Z</published>
-    <updated>2020-11-04T13:07:15.179Z</updated>
+    <updated>2020-11-07T12:47:28.963Z</updated>
     
     
     <summary type="html">&lt;p&gt;翻牆程式，從Evernote上拿回紀錄。&lt;/p&gt;</summary>
@@ -230,7 +230,7 @@
     <link href="https://mollykannn.github.io/post/start-to-use-yii2-1/"/>
     <id>https://mollykannn.github.io/post/start-to-use-yii2-1/</id>
     <published>2018-09-15T16:00:00.000Z</published>
-    <updated>2020-11-04T13:07:15.179Z</updated>
+    <updated>2020-11-07T12:47:28.963Z</updated>
     
     
     <summary type="html">&lt;p&gt;從Evernote上拿回一些筆記….&lt;/p&gt;</summary>
