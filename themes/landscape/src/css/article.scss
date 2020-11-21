@@ -107,17 +107,9 @@
   justify-content: center;
   padding-top: 30px;
   border-top: 1px dashed $color-border;
-  & #article-nav-newer {
-    text-align: right;
-    @include mq-mobile {
-      text-align: center;
-    }
-  }
+  & #article-nav-newer,
   & #article-nav-older {
-    text-align: left;
-    @include mq-mobile {
-      text-align: center;
-    }
+    text-align: center;
   }
   & .article-nav-link-wrap {
     flex: 1;
@@ -133,7 +125,7 @@
       margin: 0;
     }
     & .article-nav-caption {
-      color: $color-border;
+      color: $color-grey;
       text-transform: uppercase;
     }
     & .article-nav-title {
