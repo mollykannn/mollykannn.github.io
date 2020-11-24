@@ -1,8 +1,10 @@
 ---
 title: 使用不同SSH key登錄
 date: 2020-11-04 20:41:19
-category: ssh
-tags: ssh
+category: 
+  - SSH
+tags: 
+  - SSH key
 photos:
 ---
 
