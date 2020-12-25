@@ -6,7 +6,7 @@
   <link href="https://mollykannn.github.io/atom.xml" rel="self"/>
   
   <link href="https://mollykannn.github.io/"/>
-  <updated>2020-11-24T13:27:23.114Z</updated>
+  <updated>2020-12-25T12:55:00.686Z</updated>
   <id>https://mollykannn.github.io/</id>
   
   <author>
@@ -17,11 +17,39 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>安裝vue-cli (vue3.0) 時的基本設定</title>
+    <link href="https://mollykannn.github.io/post/vue-cli-setting/"/>
+    <id>https://mollykannn.github.io/post/vue-cli-setting/</id>
+    <published>2020-12-25T12:38:48.000Z</published>
+    <updated>2020-12-25T12:55:00.686Z</updated>
+    
+    
+    <summary type="html">&lt;img src=&quot;/post/vue-cli-setting/banner/banner.jpeg&quot; class=&quot;banner&quot;&gt;
+&lt;p&gt;這次說明一下個人安裝vue-cli (vue3.0) 時所做的基本設定吧👋🏻👋🏻👋🏻。&lt;/p&gt;
+&lt;p&gt;先下載vue-cli&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;hljs bash&quot;&gt;yarn global add @vue/cli&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;如要Upgrade可打上&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;hljs bash&quot;&gt;yarn global upgrade --latest @vue/cli&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;建立新project&lt;/p&gt;
+&lt;figure class=&quot;highlight bash&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;code class=&quot;hljs bash&quot;&gt;vue create new-project&lt;br&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="vueJS" scheme="https://mollykannn.github.io/categories/vueJS/"/>
+    
+    
+    <category term="Javascript" scheme="https://mollykannn.github.io/tags/Javascript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Webpack - 使用SMACSS sorting order</title>
     <link href="https://mollykannn.github.io/post/use-smacss-sorting-order/"/>
     <id>https://mollykannn.github.io/post/use-smacss-sorting-order/</id>
     <published>2020-11-24T12:30:06.000Z</published>
-    <updated>2020-11-24T13:27:23.114Z</updated>
+    <updated>2020-12-25T12:55:00.686Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/use-smacss-sorting-order/banner/banner.jpeg&quot; class=&quot;banner&quot;&gt;
@@ -44,7 +72,7 @@
     <link href="https://mollykannn.github.io/post/ssh-key-login/"/>
     <id>https://mollykannn.github.io/post/ssh-key-login/</id>
     <published>2020-11-04T12:41:19.000Z</published>
-    <updated>2020-11-24T13:27:23.114Z</updated>
+    <updated>2020-12-25T12:55:00.686Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/ssh-key-login/banner/banner.jpeg&quot; class=&quot;banner&quot;&gt;
@@ -65,7 +93,7 @@
     <link href="https://mollykannn.github.io/post/yarn-introduction/"/>
     <id>https://mollykannn.github.io/post/yarn-introduction/</id>
     <published>2020-10-20T12:33:10.000Z</published>
-    <updated>2020-11-24T13:27:23.114Z</updated>
+    <updated>2020-12-25T12:55:00.686Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/yarn-introduction/banner/banner.jpeg&quot; class=&quot;banner&quot;&gt;
@@ -96,7 +124,7 @@
     <link href="https://mollykannn.github.io/post/download-web-api-binary-file/"/>
     <id>https://mollykannn.github.io/post/download-web-api-binary-file/</id>
     <published>2020-09-23T11:55:16.000Z</published>
-    <updated>2020-11-24T13:27:23.114Z</updated>
+    <updated>2020-12-25T12:55:00.682Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/download-web-api-binary-file/banner/banner.jpeg&quot; class=&quot;banner&quot;&gt;
@@ -119,7 +147,7 @@
     <link href="https://mollykannn.github.io/post/start-to-use-hexo/"/>
     <id>https://mollykannn.github.io/post/start-to-use-hexo/</id>
     <published>2020-09-01T12:20:00.000Z</published>
-    <updated>2020-11-24T13:27:23.110Z</updated>
+    <updated>2020-12-25T12:55:00.682Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/start-to-use-hexo/banner/banner.jpeg&quot; class=&quot;banner&quot;&gt;
@@ -140,7 +168,7 @@
     <link href="https://mollykannn.github.io/post/vscode-css-sorting/"/>
     <id>https://mollykannn.github.io/post/vscode-css-sorting/</id>
     <published>2019-03-18T12:18:53.000Z</published>
-    <updated>2020-11-24T13:27:23.110Z</updated>
+    <updated>2020-12-25T12:55:00.682Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/vscode-css-sorting/banner/banner.jpeg&quot; class=&quot;banner&quot;&gt;
@@ -164,7 +192,7 @@
     <link href="https://mollykannn.github.io/post/Font-Book/"/>
     <id>https://mollykannn.github.io/post/Font-Book/</id>
     <published>2019-02-13T12:37:20.000Z</published>
-    <updated>2020-11-24T13:27:23.110Z</updated>
+    <updated>2020-12-25T12:55:00.682Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/Font-Book/banner/2019-02-13-Font-Book.jpeg&quot; class=&quot;banner&quot;&gt;
@@ -186,7 +214,7 @@
     <link href="https://mollykannn.github.io/post/HTML-and-CSS-Design-and-Build-Websites/"/>
     <id>https://mollykannn.github.io/post/HTML-and-CSS-Design-and-Build-Websites/</id>
     <published>2019-01-14T12:09:21.000Z</published>
-    <updated>2020-11-24T13:27:23.110Z</updated>
+    <updated>2020-12-25T12:55:00.678Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/HTML-and-CSS-Design-and-Build-Websites/banner/2019-01-14-HTML-and-CSS-Design-and-Build-Websites.jpg&quot; class=&quot;banner&quot;&gt;
@@ -211,7 +239,7 @@
     <link href="https://mollykannn.github.io/post/social-media-share-like-button/"/>
     <id>https://mollykannn.github.io/post/social-media-share-like-button/</id>
     <published>2018-12-15T16:00:00.000Z</published>
-    <updated>2020-11-24T13:27:23.110Z</updated>
+    <updated>2020-12-25T12:55:00.678Z</updated>
     
     
     <summary type="html">&lt;img src=&quot;/post/social-media-share-like-button/banner/2018-12-16-social-media-share-like-button.png&quot; class=&quot;banner&quot;&gt;
@@ -226,25 +254,6 @@
     <category term="Share Button" scheme="https://mollykannn.github.io/tags/Share-Button/"/>
     
     <category term="Like Button" scheme="https://mollykannn.github.io/tags/Like-Button/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>MACOS - Shadowsocks使用方法</title>
-    <link href="https://mollykannn.github.io/post/shadowsocks/"/>
-    <id>https://mollykannn.github.io/post/shadowsocks/</id>
-    <published>2018-09-16T16:00:00.000Z</published>
-    <updated>2020-11-24T13:27:23.110Z</updated>
-    
-    
-    <summary type="html">&lt;p&gt;翻牆程式，從Evernote上拿回紀錄。&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="MACOS" scheme="https://mollykannn.github.io/categories/MACOS/"/>
-    
-    
-    <category term="Software" scheme="https://mollykannn.github.io/tags/Software/"/>
     
   </entry>
   
